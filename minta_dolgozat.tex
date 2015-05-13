@@ -1,0 +1,145 @@
+% BEÁLLÍTÁSOK - JOBB NEM VÁLTOZTATNI
+\documentclass[final]{ubb_dolgozat}
+\usepackage{definitions}
+\sloppy
+\frenchspacing
+%%
+
+
+% milyen nyelveken akarunk forráskódot megjeleníteni
+\lstloadlanguages{Clean,Prolog,Matlab,C,C++}
+
+% ezt be lehet tenni MINDEGYIK megjelenítendő kód elé.
+\lstset{language=Matlab}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%!!          EZT KELL VÁLTOZTATNI       !!%%%%
+%%     A DOLGOZAT CÍMOLDALÁNAK ELEMEI        %%
+
+%% MELYIK ÉVBEN ADJUK LE
+\submityear{%
+2015
+}
+%% MELYIK HÓNAPBAN ADJUK LE
+\submitmonthHU{%
+Július
+}
+\submitmonthRO{%
+Iulie
+}
+\submitmonthEN{%
+July
+}
+
+\titleHU{%
+OSGI technológián alapuló tesztelési és szimulációs keretrendszer megerősítéses tanulási algoritmusok tanulmányozására
+}
+
+% Amennyiben szükséges, az alábbi sorokat ki kell komment-ezni és 
+% beírni a megfelelő címeket
+
+\titleEN{%
+An OSGI-based testing and simulation framework for the study of reinforcement learning algorithms
+}
+
+\titleRO{%
+-
+}
+
+\author{%
+Gáll Norbert
+}
+
+%%
+\tutorHU{%
+DR. JAKAB HUNOR, EGYETEMI ADJUNKTUS\\
+%{\large Babe\c{s}--Bolyai Tudományegyetem,\\
+% Matematika és Informatika Kar}% ha különbözik, akkor fel kell tűntetni
+}
+%%
+\tutorRO{%
+Lector dr. Tanár Okos\\ % {\large Universitatea Babe\c{s}--Bolyai,\\ % dacã diferã!!!
+% Facultatea de Matematic\u{a} \c{s}i Informatic\u{a} }%
+}
+%%
+\tutorEN{%
+JAKAB HUNOR, PH.D, ASSISTANT PROFESSOR
+% {\large Babe\c{s}--Bolyai University,\\
+% Faculty of Mathematics and Informatics}
+}
+
+%\includeonly{bevezet}
+
+
+\begin{document}
+
+%% ABSTRAKT
+\begin{abstractEN} % ANGOL VÁLTOZAT
+
+% a lenti részt értelemszerűen ki kell tölteni a dolgozat angol kivonatával.
+% A BEGIN ... END között CSAK A SAJÁT SZÖVEG kell, hogy legyen.
+% Az utolsó mondatot benne kell hagyni, mely által kijelentitek, hogy a munkátok SAJÁT.
+
+
+{ \color{gray!60!red}
+	The goal of the dissertation is to create a dynamic testing and simulation environment for the evaluation of reinforcement learning algorithms on a remote server using large number of parallel running tests.
+	
+	The simulation environment is based on the OSGI specification, which defines a dynamic, modularized component model for building complex applications. 
+Previous attempts at creating such a testing environment for an example the “RL-GLUE” project had only partial success. Although it is capable to run and evaluate various tests written in different programming languages, it is already based in obsolete technology and the project was closed a few years ago. 
+
+	The system I made is capable of evaluating RL algorithms written in JAVA through running various experiments. All this happens with the help of a simulation environment which runs on a remote access server. The client is initiating the test which are written based on a  predefined standard, connects to the server which runs the test gets a proper feedback with the help of machine learning algorithms. 
+
+	The server makes it possible to use a number of predefined simulation environments to perform tests that  can be run on the server independently of each other.
+	 
+	The framework enables the monitoring of the experiments, based on a remote method invocation API and through a web interface. 
+
+	This work is the result of my own activity. I have neither gave nor received unauthorized assistance on this work.
+
+
+\end{abstractEN}
+
+% ez a címoldal része
+\maketitle
+
+%% 
+
+% a dolgozat tartalomjegyzéke -- ez automatikusan generálódik a STRUKTÚRA alapján.
+{ \baselineskip 1ex
+  \parskip 1ex
+  \tableofcontents
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%         a dolgozat tartalma         %%%%%%%%%%%%
+
+% ajánlott külön file-okba írni az egyes fejezeteket,
+% ugyanis úgy jobban át lehet látni.
+
+
+% a bevezetõ fejezet FILE-ja.
+\include{bevezet}
+
+
+\include{alapok}
+
+\include{elmelet}
+
+\include{gyakorlat}
+
+\include{elemzes}
+
+
+\appendix
+\include{programok}
+
+
+{ \renewcommand{\baselinestretch}{0.8}\normalsize %
+  \setlength{\itemsep}{-2.4mm}
+  \setlength{\bibspacing}{0.67\baselineskip}
+  \bibliographystyle{abbrvnat_hu}
+  \bibliography{dolgozat}
+}
+
+\end{document}

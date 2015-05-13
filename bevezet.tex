@@ -1,0 +1,27 @@
+%!TEX root = minta_dolgozat.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Bevezető}\label{ch:BEVEZET}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	A dolgozat témája a megerősítéses tanulási algoritmusok futtatására és tesztelésére biztosítani egy egységes környezetet, mely egy távoli szerveren fut és bárhonnan elérhető.
+
+	A RoboRun projekt célja egy olyan dinamikus tesztelési és szimulációs környezet felépítése ahol megerősítéses tanulással kapcsolatos algoritmusok kipróbálására és tesztelésére van lehetőség egy távoli elérésű szerveren. E szimulációs környezet az OSGi[1] keretrendszerre épül, amely egy dinamikus, modularizált komponens modellt definiál komplex alkalmazások felépítésére. E környezet teljesen egységes és könnyen elérhető. 
+	
+	A tanulás egy nagyon fontos emberi tulajdonság, mely ott van az emberek mindennapjaiban. Hiszen az ember minden nap tanul valami újat, valami új tapasztalattal gazdagodik. A gépi tanulás is az emberi tanuláson alapszik, csak más jelentéssel bír. Mondhatjuk azt, hogy egy olyan folyamat, mely során a tanuló algoritmus paraméterei és belső állapotai változnak, amelyek később meghatároznak egy döntéshozatali stratégiát. Tehát bizonyos tapasztalat alapján, melyet a belső állapotok reprezentálnak, képes a számítógép döntéseket hozni. Ennek a legfőbb nehézsége abban rejlik, hogy véges számú lépés alatt meg kell tanítani a számítógépet arra, hogy egyre jobb döntéseket hozzon végtelen sok lépés közül.
+	
+	A RoboRun projekt ötlete, nem számít újdonságnak a piacon. Számos hasonló projekt létezik, hasonló funkcionalitásokkal. A RoboRun projekt szempontjából az Rl-Glue\footnote{\href {http://glue.rl-community.org/wiki/Main_Page}{http://glue.rl-community.org/wiki/Main_Page}} projektet érdemes kiemelni, hiszen ez szolgált a RoboRun projekt alapjául és számos funkcionalitását is felhasználtuk a projekt során. Az Rl-Glue projekt szerzői Brian Tanner és Adam White. E projekt eredetileg C++ ban íródott, viszont van teljesen Java- ban megírt változata is. Az Rl-Glue egy nyelv független környezet a megerősítéses tanulási algoritmusok tanulmányozására. Kétféle protokollt kínál, az úgymond külső- illetve belső módokat. A külső mód teljesen socketeken keresztül végzi a kommunikációt, míg a belső mód az teljesen lokálisan. Ez által a belső mód sokkal gyorsabb működést eredményez. A projekt 2010- ben lezárult, viszont teljesen nyílt forráskódú, mindenki számára elérhető és használható napjainkban is. Néhány hasonló projekt: RL Toolbox\footnote{\href {http://www.igi.tu-graz.ac.at/gerhard/ril-toolbox/general/overview.html}{http://www.igi.tu-graz.ac.at/gerhard/ril-toolbox/general/overview.html}}, ClSquare\footnote{\href {http://ml.informatik.uni-freiburg.de/research/clsquare}{http://ml.informatik.uni-freiburg.de/research/clsquare}}, PIQLE\footnote{\href{http://piqle.sourceforge.net/}{http://piqle.sourceforge.net/}}. 
+
+
+	A RoboRun projekt az Rl-Glue projektet tovább gondolva és funkcionalitásait felhasználva, napjaink technológiáin alapszik. Egy dinamikus és egységes környezetet biztosít, mindezt úgy, hogy a rendszer teljesen moduláris, folyamatosan és könnyen változtatható, illetve bővíthető. Mindezek mellett nagyon jól megvalósítja a komponensek egymástól való elválasztását. A projekt teljesen Java alapokon nyugszik, felhasználva az OSGi platformot. 
+	
+	A fő változtatásokat főként a dinamikusság, a modularitás illetve a könnyed bővíthetőség foglalja magában. E mellett a RoboRun projekt egy nagy előnye, hogy nagyon kis erőforrásra van a felhasználónak szüksége még komolyabb tesztek futtatásánál is, hiszen a fő logikát, tehát az erőforrás igényes részeket mind a távoli elérésű szerver futtatja. Az eredmények összegezve megtekinthetőek minden teszt végén, illetve egy webes felületen keresztül is. A másik nagy előny, hogy a szerver bárhonnan elérhető internet kapcsolaton keresztül. 
+	
+	A dolgozat négy fejezetből áll. Az első fejezet röviden bemutatja a megerősítéses tanulást néhány világbeli példán keresztül, majd bemutatásra kerül néhány alap fogalom illetve ezek felhasználása a projekt során.
+	
+	A második fejezet a RoboRun projekt alapjául szolgáló OSGi keretrendszert mutatja be, ismerteti ennek architektúráját, illetve azt, hogy  miért esett e keretrendszerre a választás. Megemlít más eszközöket és technológiákat is melyek felhasználásra kerültek. E fejezet kitér arra is, hogy a projekt, hogyan használja a megerősítéses tanulási kísérletek lebonyolítására.
+	
+	A harmadik fejezet részletezi a projekt által felhasznált technológiákat, majd tárgyalja a rendszer felépítését, ismerteti a szerver oldali architektúrát. 
+	
+	A negyedik fejezet a rendszer használatát és működését mutatja be egy példán keresztül. Részletesen kitér a rendszer által nyújtott funkcionalitásokra. 
+	
+	A RoboRun projekt sikeres elkészítéséért köszönet illeti a projektvezetőt.

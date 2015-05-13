@@ -1,0 +1,41 @@
+%!TEX root = dolgozat.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Felhasznált módszerek és eszközök}\label{ch:diszkr}
+
+\begin{osszefoglal}
+	Minden nagyobb projekt esetén a fejlesztőknek szükségük van arra, hogy a megfelelő felkészültségük és találékonyságuk mellett, figyelmet fordítsanak a hatékony munkára is. Ehhez szükségük lehet különböző verziókövető rendszerek használatára, projektmenedzsment eszközökre és build rendszerekre.
+\end{osszefoglal}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Verziókövetés}
+
+Napjainkban egyre nagyobb szükség van arra, hogy egy projekt esetén a munka könnyedén megosztható és hordozható legyen a fejlesztők közt. E mellett nagyon fontos a fejlesztési folyamat monitorizálása.
+
+	E célra fejlesztették  ki a verziókövető rendszereket és a projektmenedzsment eszközöket melyek által könnyedén megoszthatóvá válik a fejlesztői munka és folyamatosan ellenőrizhető a fejlesztés folyamata.  
+	
+	A verziókövető rendszer által  folyamatosan nyomon követhető a projekt fejlődése. Könnyed visszaállítási lehetőséget biztosit arra az esetre, ha valami történne a lokális gépünkön tárolt forrás állományokkal vagy ha bármi hiba történne a fejlesztés során ami visszaállítást igényel. Legnagyobb haszna a verzió követő rendszereknek, az olyan projekteknél van, amelyet több fejlesztő fejleszt egyszerre. Így nagyon egyeszűen követhető, hogy melyik fejlesztő milyen fázisban tart.
+	
+	A RoboRun projekt fejlesztése során a forrásállományok tárolására és a fejlesztés nyomkövetésére felhasznált verziókövető rendszer a Git[3], amely nyílt forráskódú és teljesen ingyenes. A projekt szerzője által használt kliensalkalmazás a  TortoiseGit[4]. A TortoiseGit rendelkezik grafikus felülettel, így használta egyszerű. 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projektmenedzsment}
+
+"A projektmenedzsment az erőforrások szervezésével és azok irányításával foglalkozó szakterület, melynek célja, hogy az erőforrások által végzett munka eredményeként egy adott idő- és költségkereten belül sikeresen teljesüljenek a projekt céljai." (forrás: http://hu.wikipedia.org/wiki/Projektmenedzsment)
+
+	A projektmenedzsment eszközök fő célja tehát, hogy a fejlesztők a specifikáció által meghatározott feladatot adott idő - és költségkereten belül sikeresen tudják teljesíteni. Ennek érdekében számos hasznos funkcionalitást biztosítanak. Ilyen funkcionalitások például, különböző feladatkörök kiosztása, különböző feladatok kiosztása, egy adott folyamatra szánt idő meghatározása, a fejlesztő által eltöltött munkaidő egy adott rész megvalósításával. Mindezek mellett kommunikációs lehetőséget biztosít a fejlesztők között. Lehetőség ad feltölteni dokumentumokat, diagramokat, segédanyagokat a projekthez, ez által megkönnyítve a fejlesztők munkáját.
+	
+	A RoboRun projekt fejlesztése során alkalmazott projektmenedzsment eszközként a Redmine[5] webes menedzsment eszköz szolgált. Amely nyílt forráskódú és platform független. Egyszerű és letisztult felülete révén könnyen kezelhető. Néhány Redmine által nyújtott funkcionalitás: naptár, e-mail értesítés, szerepkör szerinti hozzáférés, wiki, stb.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Build rendszer}
+
+A build rendszereket többnyire projektek menedzselésére és a build folyamat automatizálására alkalmazzák. 
+
+	A RoboRun projekt fejlesztése során alkalmazott build rendszer a Maven[6], amelyet Jason van Zyl készített 2002-ben. A Maven egy nyílt forráskódú, platform független eszköz. Leggyakoribb felhasználása a Java nyelvben írt projektek esetében történik. A Maven konfigurációs modellje XML alapú, e mellett bevezetésre került a POM(Project Object Model). A POM az adott projekt szerkezeti vázának teljes leírását tartalmazza és a modulokat azonosítókkal látja el.  Ez a pom.xml állomány által valósul meg, amely tartalmazza ezeket az információkat. 
+	
+	A RoboRun projekt esetén a Maven build eszköz legfontosabb szerepe a függőségek, célok és pluginok kielégítése a build folyamat során, hiszen a Maven saját függőség kezelő rendszerrel rendelkezik, amely  a build - elés során letölti a központi repositoryból(gyűjteményből) az előre megadott függőségeket és elhelyezi a lokális tárolóban, ahonnan a jövőben használni fogja.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

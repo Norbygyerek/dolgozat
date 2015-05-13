@@ -1,0 +1,68 @@
+%!TEX root = minta_dolgozat.tex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Alapfogalmak}\label{ch:ALAP}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{osszefoglal}
+	E fejezet célja bemutatni röviden a megerősítéses tanulást és ezen algoritmusok alap lépéseinek bemutatását, illetve a RoboRun projekttel kapcsolatos néhány alap fogalom bevezetése és ezek használata a projekt során.
+\end{osszefoglal}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{A megerősítéses tanulás}\label{sec:ALAP:ml}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{A megerősítéses tanulás algoritmusok kipróbálásának alap lépései}\label{sec:ALAP:mi}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Alapfogalmak bevezetése}\label{sec:ALAP:adatelem}
+
+A projekt során a szerző az Rl-Glue projekt elveit követte, felhasználva annak funkcionalitásait. A három alap komponens mindkét projekt esetén  az Agent\footnote{Agent - magyarul ügynök}, Environment\footnote{Environment - magyarul környzet} és az Experiment\footnote{Experiment - magyarul  kísérlet}. Ezen komponensek egymással való interakciója révén nyílik lehetőségünk futtatni illetve tesztelni a megerősítéses tanulási algoritmusokat. 
+
+	Az Agent komponens valójában a tanulási algoritmus, amely kiszabja a feladatokat és az ezekre vonatkozó megszorításokat egy adott iterációra vonatkozóan. Az Agent jutalmat(reward) kap minden egyes iteráció után arra vonatkozóan, hogy a probléma megoldásának szempontjából mennyire volt hatékony a kiszabott feladat, illetve az erre vonatkozó megszorítás. Mivel nem tudhatja az algoritmus, hogy melyik a helyes módszer a probléma megoldására, ezért találgatnia kell. Időnként új cselekvéseket is kell próbálnia, majd az ezekből megszerzett tudást, ami esetünkben a jutalom, optimális módón felhasználnia a következő cselekvés meghatározására. 
+	
+	Az Environment komponens feladata végrehajtani az Agent komponens által meghatározott feladatokat és az ezekre vonatkozó megszorításokat az adott problémára. A végrehajtás során következtetéseket(observation) von le minden egyes állapotról. Majd ezen következtetések alapján jutalmakat(reward) határoz meg. Mivel bizonytalan a környezet,    valami becslést kell alkalmaznia a jövőre nézve, így kezdetben, lehet, hogy egy jó lépésért nem kapjuk meg a megfelelő jutalmat. Viszont minél jobban megismerjük a környezetet, annál pontosabb lesz egy lépésért vagy lépés sorozatért járó jutalom. A jutalom egy számban fejezhető ki, amely egy adott intervallumban mozog. Ha az intervallum felső határához közelít a szám akkor pozitív visszajelzést kaptunk az adott lépés vagy lépes sorozat után, amennyiben az intervallum alsó határához közelít a szám, negatív a visszajelzés.
+	
+	Az Experiment komponens irányítja a teljes kísérlet végrehajtását. E komponens nincs direkt kapcsolatban az Agent és az Environment komponensekkel. Van köztük egy köztes réteg, amely végzi a kommunikációt e három komponens között.  Az Experiment komponensben van meghatározva a lépések száma egy adott iterációban, illetve az iterációk száma is. Fontos azon szerepe is az Experiment komponensnek, hogy a végső eredményeket ő kapja meg az Agent illetve az Environment komponensektől a köztes rétegen keresztül.
+A fent említett köztes réteg az Rl-Glue projekt esetén az úgynevezett RL-Glue mely a teljes kommunikáció lebonyolítását végzi a komponensek között illetve létrehozza a hálózati kommunikációhoz szükséges objektumokat.
+
+\begin{figure}[t]
+  \centering
+  \pgfimage[width=0.8\linewidth]{images/glueConnection}
+  \caption[Példa képek beszúrására]%
+  {Rl-Glue projekt komponensek közti kommunikációja:\\
+  {\white .}\hfill\url{http://rl-glue.googlecode.com/svn/trunk/docs/html/index.html}}
+  \label{fig:ALAP:sm1}
+\end{figure}
+
+A RoboRun projekt esetén az RL-Glue komponens helyét felváltja a RoboControl komponens, viszont a funkcionalitások nagy része megmarad vagy csak részben változik. Például a RoboRun projekt esetén nincs szükség ezen a szinten beállítani a hálózati kommunikációt.
+
+	Az Agent, Environment, Experiment és a RoboControl hasonló módon működnek mint az Rl- Glue projekt esetén, viszont a RoboRun projektben az Experiment kivételével, minden komponens  egy szolgáltatás az OSGi konténerben, amely egy távoli GlassFish[2] szerveren fut. Az Experiment komponens és az OSGi konténer közötti kapcsolat megteremtéséért egy OSGi modul a felelős. E modul ismeri az összes konténerbe telepített Agent illetve Environment komponenst.
+	
+	 A konténerben egyszerre több előre definiált Agent és Environment lehet telepítve, ezek száma nincs korlátozva. Bármikor módosítható, törölhető vagy teljesen új Agent és Environment is hozzáadható a konténerhez anélkül, hogy a szervert meg kellene állítani vagy újra kellene indítani.
+
+\begin{figure}[t]
+  \centering
+  \pgfimage[width=1.6\linewidth]{images/osgiContener}
+  \caption[Példa képek beszúrására]%
+  {A RoboRun projekt alap komponensek közti kommunikáció:\\
+  {\white .}\hfill\url{}}
+  \label{fig:ALAP:sm1}
+\end{figure}
+
+Egy kísérlet futtatása során kliens oldalon az Experiment komponens meghatározza a szükséges lépések számát iterációnként és az iterációk számát, majd kapcsolatba lép az OSGi modullal. Az OSGi modul a fent említett módon, ismer minden olyan Agent - et és Environment - et, amely telepítve van a konténerbe. Ezek közül választhat az Experiment komponens, hogy melyiket szeretné használni. Tehát kiválaszthatja azt, hogy melyik Environment - hez milyen Agent -t szeretne használni a kísérlet során. Ezek az információk mind az OSGi modulon keresztül jutnak el a szervertől a kliensig. Amint az Experiment komponens meghatározta a kívánt Agent -t és Environment -t, az OSGi modul közvetíti ezt a RoboCommunication komponens fele, mely lekérdezi a kiválasztott Agent és Environment szolgáltatásokat. Ezek folyamatos interakcióba kerülnek egymással melyet a RoboControl komponens irányít. Amint véget ér a kísérlet az Experment komponens az OSGi modul segítségével megkapja a kísérlet eredményét.
+
+	Minden Agent implementálja az AgentInterface -t és minden Environment implementálja az EnvironmentInterface -t. 
+
+\begin{figure}[t]
+  \centering
+  \pgfimage[width=1\linewidth]{images/agentUML}
+  \caption[Példa képek beszúrására]%
+  {Az Agent osztály UML diagramja\\
+  {\white .}\hfill\url{}}
+  \label{fig:ALAP:sm1}
+\end{figure}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
