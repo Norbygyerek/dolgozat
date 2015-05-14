@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.25)  14 MAY 2015 18:02
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.25)  14 MAY 2015 19:07
 entering extended mode
 **minta_dolgozat.tex
 (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\minta_dolgozat.tex
@@ -1051,6 +1051,12 @@ LaTeX Warning: Label `fig:ALAP:sm1' multiply defined.
 
 LaTeX Warning: Label `fig:ALAP:sm1' multiply defined.
 
+
+LaTeX Warning: Label `fig:ALAP:sm1' multiply defined.
+
+
+LaTeX Warning: Label `fig:ALAP:sm1' multiply defined.
+
 ) (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\elemzes.aux)
 (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\programok.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
@@ -1352,23 +1358,40 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\progfiles/Activator
 .java [12 <D:/Hazik/III.ev/II.felev/Feladatok/Szakdolgozat/UjTemplate/images/os
-giArchitecture.png>])) [13]
+giArchitecture.png>])
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.73 \\\textbf
+              {Istalled} vagy \textbf{Installált} állapot: A batyu sikeres...
+
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+) [13 <D:/Hazik/III.ev/II.felev/Feladatok/Szakdolgozat/UjTemplate/images/batyuE
+leres.jpg>] [14 <D:/Hazik/III.ev/II.felev/Feladatok/Szakdolgozat/UjTemplate/ima
+ges/batyuLifeCycle.jpg>]
 (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\elemzes.tex
 5. fejezet
-) [14
+) [15
 
 
 
 ]
 (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\programok.tex
 A. f\"uggel\'ek
-) [15
+) [16
 
 
 
 ]
 (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\minta_dolgozat.bbl)
-[16
+[17
 
 
 ]
@@ -1393,8 +1416,8 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 26476 strings out of 493921
- 478118 string characters out of 3147282
+ 26481 strings out of 493921
+ 478170 string characters out of 3147282
  609392 words of memory out of 3000000
  29113 multiletter control sequences out of 15000+200000
  73493 words of font info for 95 fonts, out of 3000000 for 9000
@@ -1410,9 +1433,9 @@ Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/
 fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
 imes/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><
 C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on minta_dolgozat.pdf (19 pages, 450436 bytes).
+Output written on minta_dolgozat.pdf (20 pages, 519993 bytes).
 PDF statistics:
- 330 PDF objects out of 1000 (max. 8388607)
- 82 named destinations out of 1000 (max. 500000)
- 184 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 341 PDF objects out of 1000 (max. 8388607)
+ 85 named destinations out of 1000 (max. 500000)
+ 194 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -51,3 +51,28 @@ Egy batyuban négyféle csomag érhető el:
 \\Az \textbf{Import-Package} által megadott csomagok
 \\A \textbf{Require-Bundle} által megadott batyu összes publikus csomagja
 \\A Java összes függvénykönyvtára
+
+\begin{figure}[t]
+  \centering
+  \pgfimage[width=1\linewidth]{images/batyuEleres}
+  \caption[Batyuk elerese]%
+  {Batyu által elérhető csomagok\\
+  {\white .}\hfill\url{}}
+  \label{fig:ALAP:sm1}
+\end{figure}
+
+\begin{figure}[t]
+  \centering
+  \pgfimage[width=1\linewidth]{images/batyuLifeCycle}
+  \caption[Batyuk eletciklusa]%
+  {Batyu életciklusa\\
+  {\white .}\hfill\url{https://osgi.org/download/r6/osgi.core-6.0.0.pdf}}
+  \label{fig:ALAP:sm1}
+\end{figure}
+
+\\\textbf{Istalled} vagy \textbf{Installált} állapot: A batyu sikeresen installálásra került az OSGi keretrendszerben
+\\\textbf{Resolved} vagy \textbf{Feloldott} állapot: A batyu export illetve import függőségei sikeresen ki vannak elégítve és az általa kiajánlott csomagok is használhatóak a többi batyu számára
+\\\textbf{Starting} vagy \textbf{Indulás} állapot: A batyu \texttt{Activator} osztályának start() metódusa meghívásra került de még nem tért vissza
+\\\textbf{Active} vagy \textbf{Aktív} állapot: A batyu teljesen aktív a konténerben és használható.
+\\\textbf{Stopping} vagy \textbf{Leállás} állapot: A batyu stop() metódusa meghívásra került de még nem tért vissza
+\\\textbf{Uninstalled} vagy \textbf{Törölt} állapot: A batyu törlésre került és csak akkor használható újra ha újra telepítik a rendszerbe

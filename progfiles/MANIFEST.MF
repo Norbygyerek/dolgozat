@@ -1,0 +1,8 @@
+Bundle-Name: rmiExperiment
+Bundle-SymbolicName: edu.bbte.rmiExperiment
+Bundle-Version: 1.0.0
+Bundle-Vendor: GALLNORBERT
+Bundle-Activator: edu.bbte.rmiExperiment.Activator
+Export-Package: edu.bbte.rmiExperiment
+Import-Package: edu.bbte.packages,
+ org.osgi.framework;version="1.3.0"
