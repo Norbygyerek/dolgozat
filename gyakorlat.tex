@@ -10,15 +10,44 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Az OSGi keretrendszer}\label{sec:MAT:bev}
 Az OSGi -t eredetileg arra fejlesztették ki, hogy home gateway - ként működjön. Ez azt jelenti, hogy a home gateway kapcsolatban áll egy szolgáltatóval és a felhasználók által kifizetett szolgáltatásokhoz biztosít elérést. Tehát a szolgáltató kezében  van a teljes menedzselés joga, a felhasználó csak használja az adott szolgáltatásokat. 
-
-	Az OSGi keretrendszer egy olyan keretrendszer, mely a Java nyelv fölött fut. Az OSGi jelentése, Open Service Gateway Initiative. E keretrendszer célja bővíthető Java alkalmazások fejlesztésének a támogatása. Teljesen dinamikus környezetet biztosít, hiszen képes kezelni a csomagok futás idejű megjelenését és eltűnését a nélkül, hogy a felhasználó bármit is észrevenne ebből. Lehetőséget nyújt különböző szolgáltatások definiálására, amelyek folyamatosan bővíthetőek, változtathatóak, szintén futás időben. Mindezek mellett nagyon jól megvalósítja a komponensek egymástól való elkülönítését. 
 	
-	Az OSGi biztosít néhány nagyon fontos és nélkülözhetetlen eszközt, amelyek segítségével különböző szolgáltatásokat lehet építeni.   
+Az OSGi keretrendszer alapötlete a szolgáltatásorientált architektúrára[3] vezethető vissza. A szolgáltatásorientált architektúra olyan szolgáltatásokat és komponenseket biztosít, amelyek eleget tesznek egy bizonyos szabványnak, biztonságosak és egymáshoz lazán kapcsolódnak. Ezen komponensek folyamatosan változtathatóak és újra felhasználhatóak.
 
+Az OSGi keretrendszer egy olyan keretrendszer, mely a Java nyelv fölött fut. Az OSGi jelentése, Open Service Gateway Initiative. E keretrendszer célja bővíthető Java alkalmazások fejlesztésének a támogatása. Teljesen dinamikus környezetet biztosít, hiszen képes kezelni a csomagok futás idejű megjelenését és eltűnését a nélkül, hogy a felhasználó bármit is észrevenne ebből. Lehetőséget nyújt különböző szolgáltatások definiálására, amelyek folyamatosan bővíthetőek, változtathatóak, szintén futás időben. Mindezek mellett nagyon jól megvalósítja a komponensek egymástól való elkülönítését. Többféle implementációja ismert az OSGi keretrendszernek, például az Apache Felix vagy az Eclipse keretrendszer alapjául szolgáló Eclipse Equinox.
+	   
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Az OSGi architektúra}\label{sec:MAT:muv}
 
+Az OSGi keretrendszer különböző eszközöket biztosít a szolgáltatások építése érdekében. Ilyen alap eszközök például a batyuk.
 
+\begin{figure}[t]
+  \centering
+  \pgfimage[width=1\linewidth]{images/osgiArchitecture}
+  \caption[OSGi architektura]%
+  {OSGi architektúra\\
+  {\white .}\hfill\url{http://www.osgi.org/Technology/WhatIsOSGi}}
+  \label{fig:ALAP:sm1}
+\end{figure}
 
+Bundles(batyuk vagy kötegek)
 
+A batyukat az OSGi keretrendszer alapjának tekinthetjük. Általánosan három részből tevődnek össze: Java - kód, statikus erőforrások(pl.: képek) illetve leíró állomány vagy MANIFEST.MF - fájl. A programegységek az OSGi keretrendszerben batyuként kerülnek telepítésre. A batyuk rendelkeznek néhány fontos tulajdonsággal, ilyen tulajdonságok, hogy minden batyuhoz megadhatóak különböző jogok, a batyuk életciklusainak változásai különböző eseményeket generálnak, melyre feliratkozhatnak más batyuk, a batyuk lehetnek futtathatóak, amennyiben implementálják a \texttt{BundleActivator} osztályt, viszont ez nem kötelező. E mellett a batyuk egy nagyon fontos tulajdonsága az, hogy képesek szervizeket regisztrálni, amelyek által más batyuk számára elérhetővé vállnak.
+
+A leíró állomány által értelmezhető a batyu tartalma:
+\lstinputlisting{progfiles/MANIFEST.MF}
+ 
+A \textbf{Bundle-Name}- től a \textbf{Bundle-Vendor}- ig a batyuról tárolt információk találhatóak, a \textbf{Bundle-Activator}- azt az osztályt tartalmazza, amelyik elindul a batyu telepítésekor és annak törlésekor leáll. Az \textbf{Export-Package} a batyu által közzétett csomagokat tartalmazza, míg az \textbf{Import-Package} azon csomagokat tartalmazza, amelyekre a batyunak szüksége van a futás során. Természetesen a MANIFEST.MF - állomány más elemeket is tartalmazhat, illetve a példában lévők sem kötelezőek mint. Például a \textbf{Bundle-Activator} címkét nem kötelező megadni, hiszen nem minden batyunak van szüksége \texttt{Activator} osztályra. \\Példa Activator osztályra:
+\
+\lstset{language=Java}
+\lstinputlisting{progfiles/Activator.java}
+
+A batyu telepítésekor az OSGi keretrendszer példányosítja az \texttt{Activator} osztályt és meghívja a start() metódusát automatikusan. A start() metódus megkap egy \texttt{BundleContext}- re mutató referenciát mely által új szervizeket lehet regisztrálni és lekérdezni, a keretrendszer különböző eseményeire lehet feliratkozni, batyukat lehet lekérdezni.
+
+A batyuk rendelkeznek a \texttt{MANIFEST.MF} állomány révén az export - import mechanizmussal. Ez által a batyuk közzétehetik az osztályaikat más batyuk számára. Alapértelmezetten minden batyuban lévő csomag rejtett a többi batyu elől. Azokat a csomagokat amelyeket közzé szeretnénk tenni más batyuk számára az \textbf{Export-Package} címkével tehetjük meg és az \textbf{Import-Package} címke segítségével kérhetjük le azon csomagokat amelyekre szükségünk van más batyukból, természetesen csak akkor, ha ezek publikussá vannak téve a batyu által. A batyuk esetében a csomagfüggőség mellett beszélhetünk batyufüggőségről(Require-Bundle) is. Ezt akkor használják, amennyiben szükség a függőséget csak a teljes batyu képes kielégíteni.
+
+Egy batyuban négyféle csomag érhető el:
+\\A batyu által létrehozott csomagok
+\\Az \textbf{Import-Package} által megadott csomagok
+\\A \textbf{Require-Bundle} által megadott batyu összes publikus csomagja
+\\A Java összes függvénykönyvtára

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.25)  13 MAY 2015 17:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.25)  14 MAY 2015 18:02
 entering extended mode
 **minta_dolgozat.tex
 (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\minta_dolgozat.tex
@@ -1047,8 +1047,11 @@ LaTeX Warning: Label `fig:ALAP:sm1' multiply defined.
 LaTeX Warning: Label `fig:ALAP:sm1' multiply defined.
 
 ) (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\elmelet.aux)
-(D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\gyakorlat.aux)
-(D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\elemzes.aux)
+(D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\gyakorlat.aux
+
+LaTeX Warning: Label `fig:ALAP:sm1' multiply defined.
+
+) (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\elemzes.aux)
 (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\programok.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 75.
 LaTeX Font Info:    ... okay on input line 75.
@@ -1198,14 +1201,14 @@ l.122 \include{bevezet}
 (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\bevezet.tex
 1. fejezet
 
-Underfull \hbox (badness 10000) detected at line 12
+Underfull \hbox (badness 10000) detected at line 11
 \T1/ptm/m/n/8 1.
  []
 
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.12 ...p://glue.rl-community.org/wiki/Main_Page}}
+l.11 ...p://glue.rl-community.org/wiki/Main_Page}}
                                                    projektet érdemes kiemel...
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -1213,7 +1216,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.12 ...p://glue.rl-community.org/wiki/Main_Page}}
+l.11 ...p://glue.rl-community.org/wiki/Main_Page}}
                                                    projektet érdemes kiemel...
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1222,37 +1225,37 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (11.35796pt too wide) in paragraph at lines 12--12
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 11--11
 [] 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 12
+Underfull \hbox (badness 10000) detected at line 11
 \T1/ptm/m/n/8 2.
  []
 
 
-Overfull \hbox (11.35796pt too wide) in paragraph at lines 12--12
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 11--11
 [] 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 12
+Underfull \hbox (badness 10000) detected at line 11
 \T1/ptm/m/n/8 3.
  []
 
 
-Overfull \hbox (11.35796pt too wide) in paragraph at lines 12--12
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 11--11
 [] 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 12
+Underfull \hbox (badness 10000) detected at line 11
 \T1/ptm/m/n/8 4.
  []
 
 
-Overfull \hbox (11.35796pt too wide) in paragraph at lines 12--12
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 11--11
 [] 
  []
 
@@ -1260,7 +1263,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.16 
+l.15 
       [3
 
 
@@ -1327,33 +1330,43 @@ mplate/images/agentUML.jpg>]
 ]) [10]
 (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\gyakorlat.tex
 4. fejezet
-) [11
+[11
 
 
 
-] (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\elemzes.tex
-5. fejezet
-[12
-
-
-
-]) [13]
-(D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\programok.tex
-A. f\"uggel\'ek
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 12.
+] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+(D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\progfiles/MANIFEST.
+MF
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 1.
+) ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-(D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\progfiles/lolepes.p
-l
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 2.
- [14
+(D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\progfiles/Activator
+.java [12 <D:/Hazik/III.ev/II.felev/Feladatok/Szakdolgozat/UjTemplate/images/os
+giArchitecture.png>])) [13]
+(D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\elemzes.tex
+5. fejezet
+) [14
 
 
 
-])) [15]
+]
+(D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\programok.tex
+A. f\"uggel\'ek
+) [15
+
+
+
+]
 (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\minta_dolgozat.bbl)
 [16
 
@@ -1371,48 +1384,35 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 145.
 (D:\Hazik\III.ev\II.felev\Feladatok\Szakdolgozat\UjTemplate\programok.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 145.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 145.
+Package rerunfilecheck Info: File `minta_dolgozat.out' has not changed.
+(rerunfilecheck)             Checksum: 86E06CB30EB5CEA5EB58D7ABDD1014A1;3240.
 
-
-Package rerunfilecheck Warning: File `minta_dolgozat.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `minta_dolgozat.out':
-(rerunfilecheck)             Before: C09C3BD0337B385169BD5B4754110954;3704
-(rerunfilecheck)             After:  030A395B66CD32F69FEAF13EC9AB4BC9;3433.
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 145.
  ) 
 Here is how much of TeX's memory you used:
- 26034 strings out of 493921
- 472857 string characters out of 3147282
- 938392 words of memory out of 3000000
- 28599 multiletter control sequences out of 15000+200000
- 74851 words of font info for 99 fonts, out of 3000000 for 9000
+ 26476 strings out of 493921
+ 478118 string characters out of 3147282
+ 609392 words of memory out of 3000000
+ 29113 multiletter control sequences out of 15000+200000
+ 73493 words of font info for 95 fonts, out of 3000000 for 9000
  899 hyphenation exceptions out of 8191
- 55i,10n,69p,1555b,2395s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{section.4.4} has been referenced but does not exi
-st, replaced by a fixed one
-
-pdfTeX warning (dest): name{section.4.3} has been referenced but does not exist
-, replaced by a fixed one
-
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/
-MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
-ype1/urw/courier/ucrb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courie
-r/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/courier/ucrro8a.pfb><
-C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Fil
-es/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Program Files/MiKTeX 2.9
-/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/
-times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-<C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><C:/Program Files
-/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on minta_dolgozat.pdf (19 pages, 472009 bytes).
+ 55i,10n,69p,1555b,2270s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/urw/courier/ucrb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/cour
+ier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb
+><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Program 
+Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/
+fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/t
+imes/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb><
+C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on minta_dolgozat.pdf (19 pages, 450436 bytes).
 PDF statistics:
- 439 PDF objects out of 1000 (max. 8388607)
- 162 named destinations out of 1000 (max. 500000)
- 203 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 330 PDF objects out of 1000 (max. 8388607)
+ 82 named destinations out of 1000 (max. 500000)
+ 184 words of extra memory for PDF output out of 10000 (max. 10000000)
 
