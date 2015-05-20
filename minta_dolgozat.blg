@@ -1,52 +1,34 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/TeX Live for SUSE Linux)
-Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: minta_dolgozat.aux
-A level-1 auxiliary file: bevezet.aux
-A level-1 auxiliary file: alapok.aux
-A level-1 auxiliary file: elmelet.aux
-A level-1 auxiliary file: gyakorlat.aux
-A level-1 auxiliary file: elemzes.aux
-A level-1 auxiliary file: programok.aux
+This is BibTeX, Version 0.99dThe top-level auxiliary file: minta_dolgozat.aux
+A level-1 auxiliary file: bevezeto.aux
+A level-1 auxiliary file: alapfogalmak.aux
+A level-1 auxiliary file: modszerek_es_eszkozok.aux
+A level-1 auxiliary file: osgi.aux
+A level-1 auxiliary file: rendszer_hasznalata.aux
+A level-1 auxiliary file: kovetkeztetesek.aux
 The style file: abbrvnat_hu.bst
-Database file #1: dolgozat.bib
-You've used 11 entries,
-            2767 wiz_defined-function locations,
-            668 strings with 6090 characters,
-and the built_in function-call counts, 4004 in all, are:
-= -- 338
-> -- 250
-< -- 8
-+ -- 86
-- -- 75
-* -- 268
-:= -- 690
-add.period$ -- 39
-call.type$ -- 11
-change.case$ -- 42
-chr.to.int$ -- 11
-cite$ -- 22
-duplicate$ -- 197
-empty$ -- 318
-format.name$ -- 94
-if$ -- 822
-int.to.chr$ -- 1
-int.to.str$ -- 1
-missing$ -- 16
-newline$ -- 68
-num.names$ -- 44
-pop$ -- 126
-preamble$ -- 1
-purify$ -- 36
-quote$ -- 0
-skip$ -- 141
-stack$ -- 0
-substring$ -- 22
-swap$ -- 8
-text.length$ -- 0
-text.prefix$ -- 0
-top$ -- 0
-type$ -- 81
-warning$ -- 0
-while$ -- 33
-width$ -- 0
-write$ -- 155
+Database file #1: hivatkozasok.bib
+Warning--to sort, need author or key in osgi
+Warning--to sort, need author or key in rlglue
+Warning--to sort, need author or key in glassfish
+Warning--to sort, need author or key in git
+Warning--to sort, need author or key in tortoisegit
+Warning--to sort, need author or key in redmine
+Warning--to sort, need author or key in maven
+Warning--to sort, need author or key in szolg
+Warning--to sort, need author or key in apache
+Warning--to sort, need author or key in equinox
+Warning--to sort, need author or key in batyu
+Warning--to sort, need author or key in eclipseplugin
+Warning--empty year in apache
+Warning--empty year in batyu
+Warning--empty year in eclipseplugin
+Warning--empty year in equinox
+Warning--empty year in git
+Warning--empty year in glassfish
+Warning--empty year in maven
+Warning--empty year in osgi
+Warning--empty year in redmine
+Warning--empty year in rlglue
+Warning--empty year in szolg
+Warning--empty year in tortoisegit
+(There were 24 warnings)

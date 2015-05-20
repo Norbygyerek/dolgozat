@@ -1,0 +1,1 @@
+serviceRegistration  = context.registerService(Example.class.getName(), new ExampleServiceFactory(), dictionary);	

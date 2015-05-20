@@ -1,6 +1,7 @@
 % BEÁLLÍTÁSOK - JOBB NEM VÁLTOZTATNI
 \documentclass[final]{ubb_dolgozat}
 \usepackage{definitions}
+\usepackage{url}
 \sloppy
 \frenchspacing
 %%
@@ -82,11 +83,11 @@ JAKAB HUNOR, PH.D, ASSISTANT PROFESSOR
 % Az utolsó mondatot benne kell hagyni, mely által kijelentitek, hogy a munkátok SAJÁT.
 
 
-{ \color{gray!60!red}
+ \color{gray!60!red}
 	The goal of the dissertation is to create a dynamic testing and simulation environment for the evaluation of reinforcement learning algorithms on a remote server using large number of parallel running tests.
 	
 	The simulation environment is based on the OSGI specification, which defines a dynamic, modularized component model for building complex applications. 
-Previous attempts at creating such a testing environment for an example the “RL-GLUE” project had only partial success. Although it is capable to run and evaluate various tests written in different programming languages, it is already based in obsolete technology and the project was closed a few years ago. 
+Previous attempts at creating such a testing environment for an example the \texttt{RL-GLUE} project had only partial success. Although it is capable to run and evaluate various tests written in different programming languages, it is already based in obsolete technology and the project was closed a few years ago. 
 
 	The system I made is capable of evaluating RL algorithms written in JAVA through running various experiments. All this happens with the help of a simulation environment which runs on a remote access server. The client is initiating the test which are written based on a  predefined standard, connects to the server which runs the test gets a proper feedback with the help of machine learning algorithms. 
 
@@ -119,27 +120,21 @@ Previous attempts at creating such a testing environment for an example the “R
 
 
 % a bevezetõ fejezet FILE-ja.
-\include{bevezet}
-
-
-\include{alapok}
-
-\include{elmelet}
-
-\include{gyakorlat}
-
-\include{elemzes}
+\include{bevezeto}
+\include{alapfogalmak}
+\include{modszerek_es_eszkozok}
+\include{osgi}
+\include{rendszer_hasznalata}
+\include{kovetkeztetesek}
 
 
 \appendix
-\include{programok}
-
 
 { \renewcommand{\baselinestretch}{0.8}\normalsize %
   \setlength{\itemsep}{-2.4mm}
   \setlength{\bibspacing}{0.67\baselineskip}
   \bibliographystyle{abbrvnat_hu}
-  \bibliography{dolgozat}
+  \bibliography{hivatkozasok}
 }
 
 \end{document}
