@@ -1,0 +1,9 @@
+<Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
+<Bundle-Version>${project.version}</Bundle-Version>
+<Bundle-Activator>edu.bbte.agent.AgentActivator</Bundle-Activator>
+<Export-Package>
+	edu.bbte.agent;version=${project.version}
+</Export-Package>
+<Import-Package>
+	edu.bbte.packages.types, *
+</Import-Package>

@@ -78,6 +78,7 @@ Egy batyuban négyféle csomag érhető el:
 \\\textbf{Uninstalled} vagy \textbf{Törölt} állapot: A batyu törlésre került és csak akkor használható újra ha újra telepítik a rendszerbe
 \\
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{OSGi szolgáltatások}
 
 Az OSGi architektúra egy másik nagyon fontos építő eleme a szolgáltatások. A szolgáltatások által kódrészleteket lehet elérhetővé tenni, illetve ez biztosítja a batyuk közti dinamikus kommunikációt. Jól definiálja az együttműködés modellt:"publish-find-bind". A szolgáltatás egy közönséges java objektum, amely támogatja a dinamikus, futásidejű változásokat. Ez azt jelenti, hogy futási időben jelenhetnek meg szolgáltatások, melyeket azonnal használatba lehet venni, illetve ezek törlésre is kerülhetnek, szintén futási időben. A szolgáltatások elérése érdekében az OSGi konténer egy szolgáltatás tárolót biztosít. Minden szolgáltatást ide kell beregisztrálni és majd innen lehet kikérni. Minden szolgáltatás kötelező módon egy interfészt implementál és ezen interfész nevén kell regisztrálva legyen. Fontos kiemelni azt, hogy az interfész és az interfész implementációja nem kell egy batyuban legyenek. Az interfészt tartalmazó batyu közzéteszi a megfelelő csomagot, majd ezt a csomagot importálja a szolgáltatás implementációt tartalmazó batyu. Ez biztonság szempontjából is igen fontos tulajdonság lehet. A másik fontos előnye ennek az architektúrának az, hogy így több szolgáltatás is implementálhatja ugyanazt az interfészt. Abban az esetben, ha több szolgáltatás implementálja ugyanazt az interfészt akkor használni kell egy egyedi azonosítót. A szolgáltatások regisztrálását a szolgáltatás tárolóba a \texttt{ServiceRegistration} komponens által lehet megvalósítani.
@@ -99,3 +100,62 @@ Az \texttt{ExampleServiceFactory} osztály mindig egy új példányát adja viss
 \lstset{language=Java}
 \lstinputlisting{progfiles/RegisterServiceWithServiceFactory.java}
 A szolgáltatások közzététele megtörténhet a batyu indulásakor, illetve futási időben is.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{A RoboRun projekt és az OSGi}\label{sec:RoboRun és OSGi}
+
+A RoboRun projekt tervezésekor a hangsúly arra volt fektetve, hogy a készülő rendszer dinamikussága mellett, az egyes részek elkülönítődjenek egymástól. Másik fontos szempont az volt, hogy a készülő környezet teljesen egységes legyen, mely könnyen használható, bővíthető, módosítható és nem utolsó sorban könnyen elérhető legyen. Ezen tulajdonságok meghatározása után, a rendszer megvalósításához a legjobb megoldásnak az OSGi keretrendszer használata tűnt, mely egy dinamikus, modularizált komponens modellt definiál komplex alkalmazások felépítésére. Az OSGi- t ötvözve a GlassFish alkalmazás szerver lehetőségeivel, minden adott volt a rendszer megvalósításához.
+
+Ahhoz, hogy az OSGi konténerbe batyukat telepíthessünk, szükség van a projekt minden egyes batyuja esetén megadni a csomagolási típust, illetve különböző függőségeket, melyet a rendszer a konténerbe telepítés után használ. Amennyiben különböző függőségekkel rendelkezik egy batyu, a konténerbe telepítés pillanatában, az OSGi ellenőrzi, hogy kielégíthetőek- e ezek a függőségek. Ezen függőségeket, illetve a csomagolási típust is, a Maven által biztosított pom.xml állományban lehet megadni. A RoboRun projekt esetén minden szolgáltatás és batyu a \texttt{bundle} csomagolási formátumot kapta. Hiszen a szolgáltatások is \texttt{bundle} típusúak az OSGi keretrendszerben. A Webes felületet biztosító csomag kiterjesztése \texttt{war} típusú. A \texttt{RandomAgent} szolgáltatás esetén, az alábbi kódrészlet szemlélteti a csomagolási típus megadásának módját:
+\lstset{language=xml}
+\lstinputlisting{progfiles/packaging.xml}
+
+A \texttt{groupID} minden batyu esetén az \texttt{edu.bbte}, mely logikai csoportokba szervezi a komponenseket. Az \texttt{artifactID} minden batyut egyedi azonosítóval lát el. A projekt eleget tesz a Maven szabványnak, miszerint egy projekten belül a \texttt{groupID} és \texttt{artifactID} párosítások egyediek kell legyenek. A \texttt{version} megadja a batyu aktuális verziójának számát és a \texttt{packaging} a csomagolási formátumot definiálja.
+
+Maven esetén beszélhetünk direkt és tranzitív függőségekről. A direkt függőségek alatt értünk egy konkrét batyut vagy szolgáltatást melyet megadunk a pom.xml állományban. Tranzitív függőség alatt értjük azt, hogy egy direkt függőségként megadott függőség, függ más batyuktól vagy szolgáltatásoktól. A RoboRun projekt esetén, minden \texttt{Agent} komponens függ az \texttt{Agent} batyutól, mely egy interfészt definiál és minden \texttt{Environment} komponens függ az \texttt{Environment} batyutól. Ezen függőségekre a projekt fordításakor van szükség.
+
+Az \texttt{RandoAgent} esetén a függőségek az alábbi kódrészlet alapján alakulnak.
+\lstset{language=xml}
+\lstinputlisting{progfiles/randomAgentDependecy.xml}
+
+A futás idejű függőségek kielégítésére szükség van az OSGi által biztosított import-export mechanizmusra. Az import - export mechanizmus szintén a Maven által biztosított pom.xml - állományon keresztül került megvalósításra. Az \texttt{Agent} interfész esetén exportált illetve importált csomagok forráskódját \ref{kod:agentPom} kódrészlet szemlélteti.
+
+\lstset{language=xml}
+\lstinputlisting{progfiles/agentPom.xml}\label{kod:agentPom}
+
+Az \texttt{Agent} interfész által exportált csomag a \texttt{edu.bbte.agent} csomag és az által importált csomag a \texttt{edu.bbte.packages.types} csomag. Az \texttt{Agent} interfésznek csak egy külső csomagra van szüksége a futáshoz. Viszont egyes szolgáltatásoknak több csomagra is szüksége lehet a futáshoz.
+
+ 
+
+\begin{figure}[h!]
+  \centering
+  \pgfimage[width=1\linewidth]{images/osgiAlapkomponensek}
+  \caption[A RoboRun projekt alapkomponensei]%
+  {Osgi Alapkomponensek\\
+  {\white .}\hfill\url{}}
+  \label{fig:OsgiAlapkomponensek}
+\end{figure}
+
+A RoboRun projekt esetében négy alap komponensről beszélhetünk. Ezen komponensek az \texttt{Agent}(Ügynök), az \texttt{Environment}(Környezet), az \texttt{Experiment}(Kísérlet), illetve a \texttt{RoboCommunication}(Kommunikációs réteg). E négy alapkomponensre épül a rendszer. Ezen komponensek az OSGi szabványnak megfelelően, külön szolgáltatások, kivéve az Experiment, mely nem egy szolgáltatás, hanem egy közönséges batyu, amelynek az a szerepe, hogy lekérdezze a már telepített szolgáltatásokat és elindítson egy tesztet. Minden szolgáltatás külön batyuban található, ezt \ref{fig:OsgiAlapkomponensek} ábra szemlélteti. 
+
+
+A \texttt{Robo}, az \texttt{Agent} és az \texttt{Environment} interfészek külön batyuk, amelyek exportálják a csomagjukat, így más batyuk számára is elérhetőek. A \texttt{RoboCommunication} osztály, amely valójában egy OSGi szolgáltatás, implementálja a \texttt{Robo} interfészt. Ehhez hasonló módon, minden \texttt{Agent} implementálni fogja az \texttt{Agent} interfészt és minden \texttt{Environment} implementálni fogja az \texttt{Environment} interfészt. Amennyiben a rendszerbe telepítésre kerül egy olyan Agent, amely nem implementálja az \texttt{Agent} interfészt, használhatatlan lesz, hiszen ahhoz, hogy egy szolgáltatást le tudjunk kérdezi a rendszerből, ismernünk kell az általa implementált interfészt. Az \texttt{Experiment} komponens, egy közönséges batyu, amely importálja a többi szolgáltatás által közzétett csomagokat és meghatározza, mely szolgáltatásokkal szeretne dolgozni. Ezen komponensek interakciója révén képes a rendszer megerősítéses tanulási algoritmusok futtatására és tesztelésére.
+
+Az interakció belépési pontja az \texttt{Experiment} batyu. Ahhoz, hogy a batyu telepítésre kerülhessen az OSGi konténerbe, szükség van a függőségei kielégítésére. Az \texttt{Experiment} komponens sok függőséggel rendelkezik, hiszen neki szüksége van arra, hogy ismerje a telepített \texttt{Agent} és \texttt{Environment} példányokat. Az \texttt{Experiment} ismerheti az összes rendszerbe telepített \texttt{Agent} és \texttt{Environment} példányt, viszont arra is lehetőség van, hogy csak az éppen aktuális teszthez szükséges \texttt{Agent} és \texttt{Environment} példányok kerüljenek megadásra, mint függőség. Ez esetben, csak a függőségként megadott \texttt{Agent} és \texttt{Environemnt} példányokkal képes dolgozni. Ezen függőségek mellett még szüksége van a \texttt{RoboCommunication} függőségre is, hiszen a \texttt{RoboCommunication} komponens által valósul meg a kommunikáció az egyes komponensek közt. Ezen függőségeken kívül, az \texttt{Experiment} komponensnek szüksége van ismerni, ezen szolgáltatások interfészeit is.
+
+
+A szolgáltatások lekérése a szolgáltatás tárolóból a \texttt{BundleContext} referencián keresztül kerül megvalósításra. A batyuk implementálják a \texttt{BundleActivator} interfészt, mely a \texttt{start(BundleContext context)} és \texttt{stop(BundleContext context)} metódusokkal rendelkezik. Amikor telepítésre kerül egy batyu, akkor a \texttt{start(BundleContext context)} metódus automatikusan meghívásra kerül. Az egyes szolgáltatások lekérdezéséhez két lépésből áll. Első lépésben szükséges lekérdezni a szolgáltatás referenciát a \texttt{getServiceReference} metódus segítségével. Második lépésben szükséges lekérdezni a szolgáltatás objektumot a szolgáltatás referencia segítségével, mely a \texttt{getService} metódus által valósul meg. A \texttt{RandomAgent} szolgáltatás lekérdezését egy \texttt{Exerpiment} komponensben a következő kódrészlet szemlélteti. 
+\lstset{language=Java}
+\lstinputlisting{progfiles/ServiceReference.java}
+
+A \texttt{getServiceReferences} metódus két paramétert kap. Az első paraméter az interfész neve, melyet a lekérdezni kívánt szolgáltatás implementál. A \texttt{RandomAgent} szolgáltatás esetén, az \texttt{Agent} interfész. A második paraméter egy egyedi azonosító, mely által megkülönböztethetőek azon szolgáltatások, melyek ugyanazt az interfészt implementálják. 
+A \texttt{getService} metódus a kikért referencia értéket várja paraméterként. A \texttt{getService} által szolgáltatott objektum használata, teljesen megegyezik a standard Java objektumok használatával. Az objektumon keresztül meghívhatóak különböző metódusok, lekérdezhetőek és beállíthatóak értékek. 
+
+Az OSGi keretrendszerben az egyes szolgáltatások megőrzik az állapotukat egészen addig, amíg a rendszer fut vagy nem telepítik újra őket a konténerbe. A RoboRun projekt esetén, ez nem megfelelő, hiszen a projekt egy fontos alapkövetelménye, hogy párhuzamosan több teszt is legyen futtatható. Amennyiben egy szolgáltatás megőrzi az állapotát, ez azt jelentené a RoboRun projekt esetében, hogy a felhasználó elindít egy tesztet az általa választott Agent és Environment példánnyal, melyek a \texttt{RoboCommunication} szolgáltatáson keresztül valósítják meg a kommunikációt, és megvárja az eredményt, mely helyes eredmény fog a felhasználónak megadni. Majd indít még egy tesztet, de ebben az esetben, mindhárom komponens az előző teszt értékeivel fog rendelkezni, amely hibás teszt eredményekhez vezet. E probléma kiküszöbölése érdekében, került használatra a  \texttt{ServiceFactory} interfész, amely az OSGi keretrendszer egy beépített interfésze. Így minden egyes alapszolgáltatás a RoboRun projekt esetén, implementálja a  \texttt{ServiceFactory} interfészt, mely lehetővé teszi azt, hogy minden egyes szolgáltatás lekérdezéskor, a szolgáltatás egy teljesen új példányát téríti vissza a lekérdező batyu számára. A \texttt{RandomAgent} szolgáltatás esetén a \texttt{ServiceFactory} interfész implementációját a \ref{kod:randomAgentServceFactory} szemlélteti.
+\lstset{language=Java}
+\lstinputlisting{progfiles/RandomAgentServiceFactory.java}\label{kod:randomAgentServceFactory}
+
+
+
+
+

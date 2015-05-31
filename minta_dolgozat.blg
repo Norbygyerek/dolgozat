@@ -2,6 +2,7 @@ This is BibTeX, Version 0.99dThe top-level auxiliary file: minta_dolgozat.aux
 A level-1 auxiliary file: bevezeto.aux
 A level-1 auxiliary file: alapfogalmak.aux
 A level-1 auxiliary file: modszerek_es_eszkozok.aux
+A level-1 auxiliary file: felhasznalt_technologiak.aux
 A level-1 auxiliary file: osgi.aux
 A level-1 auxiliary file: rendszer_hasznalata.aux
 A level-1 auxiliary file: kovetkeztetesek.aux
@@ -14,6 +15,7 @@ Warning--to sort, need author or key in git
 Warning--to sort, need author or key in tortoisegit
 Warning--to sort, need author or key in redmine
 Warning--to sort, need author or key in maven
+Warning--to sort, need author or key in vaadin
 Warning--to sort, need author or key in szolg
 Warning--to sort, need author or key in apache
 Warning--to sort, need author or key in equinox
@@ -31,4 +33,5 @@ Warning--empty year in redmine
 Warning--empty year in rlglue
 Warning--empty year in szolg
 Warning--empty year in tortoisegit
-(There were 24 warnings)
+Warning--empty year in vaadin
+(There were 26 warnings)

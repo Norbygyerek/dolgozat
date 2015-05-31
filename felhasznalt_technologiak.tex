@@ -1,0 +1,58 @@
+\chapter{Felhasznált technólógiák}\label{ch:Technólógiák}
+
+\begin{osszefoglal}
+	A fejezet ismerteti a Glassfish alkalmazás szervert és ennek szerepét a RoboRun projekt esetében, illetve a Vaadin technológiát, mely a projekt webes felületének megvalósításában játszott szerepet.
+\end{osszefoglal}
+
+
+\section{Glassfish}\label{sec:Glassfish}
+	
+	A Glassfish alkalmazásszerver a Java Enterprise Edition specifikáció referencia implementációja. Az Oracle tulajdonába tartozik és teljesen nyílt forráskódú, viszont vásárolható hozzá kereskedelmi licensz támogatás, amelyben az Oracle saját megoldásai is helyet kapnak, például képes teljes domainek mentésére és visszaállítására. A Glassfish fontos tulajdonsága, hogy képes OSGi konténerek kezelésére. A RoboRun projekt esetén a Glassfish alkalmazásszerverre telepített OSGi konténerben vannak elhelyezve a különálló komponensek, amelyek együtt alkotják a RoboRun projektet. A Glassfish alkalmazásszerver révén távolról is telepíthetőek könnyedén új komponensek, illetve használhatóak. A Glassfish manageli a RoboRun projekt webes felületét is, mely Vaadin\cite{vaadin} a technológián alapszik. 
+
+\section{Vaadin}\label{sec:Vaadin}
+
+A Vaadin egy olyan Java webalkalmazás-keretrendszer, amely lehetőséget biztosít gazdag webalkalmazások\footnote{\href {http://hu.wikipedia.org/wiki/Rich\_Internet\_Application}{http://hu.wikipedia.org/wiki/Rich\_Internet\_Application}} fejlesztésére. A Vaadin lehetőséget nyújt a felület Java nyelvben történő implementálására, illetve egy AJAX alapú kommunikációs modellt biztosít. A Vaadin architektúra két fő részből tevődik össze: a kliens oldali részből, amely tartalmazza a Google Web Toolkit -et\footnote{\href {http://hu.wikipedia.org/wiki/Google\_Web\_Toolkit}{http://hu.wikipedia.org/wiki/Google\_Web\_Toolkit}} és amely a Java kódot, JavaScript kódra fordítja, illetve a szerver oldali részből, amely JavaServlet technológiát használ.
+A szerver oldali rész tartalmazza a felhasználó felület létrehozásához szükséges komponenseket. Ezen komponensek nagyon hasonlítanak a Java-ban írt standard alkalmazásoknál használt AWT, illetve SWING komponensekre. A Vaadin-os komponensek is figyelőket és eseményeket használnak. Az alapértelmezett komponens és téma készlet mellett, telepíthetőek különböző kiegészítők a még könnyebb használat és a még látványosabb felhasználói élmény érdekében. A komponensek személyre szabhatóak a CSS, HTML5, JavaScript technológiák felhasználása által.
+
+\subsection{A Vaadin architektúra}\label{sec:Vaadin architektura}
+
+A Vaadin webalkalmazás-keretrendszer architektúrája két fő részre osztható fel. A kliens oldal által valósul meg a megjelenítés, amely JavaScript formájában jelenik meg a böngészőben. A szerver oldali rész  mely biztosítja a komponensek könnyed elérését és használatát.
+\begin{figure}[h]
+  \centering
+  \pgfimage[width=0.8\linewidth]{images/vaadinArchitecture}
+  \caption[Vaadin keretrendszer architektúrája]%
+  {Vaadin architektúra\\
+  {\white .}\hfill\url{https://vaadin.com/book/-/page/architecture.html}}
+  \label{fig:vaadinArchitektura}
+\end{figure} 
+
+A 4.1 ábra szemétéleti a Vaadin keretrendszer architektúráját.
+A kliens oldal áll az architektúra legfelső részén, hiszen a kliens közvetlen ezzel kerül kapcsolatba. Ez a réteg a belépési pont ahonnan adatok érkeznek, melyeket a szerver oldali rész fele kell közvetíteni. A kliens oldali részben megtalálható a kliens oldali felhasználói felület és az ehhez tartozó widgetek listája, amelyek a megjelenítésér felelősek. 
+A szerver felelős az üzleti logika megvalósításáért. A Service réteg valósítja meg a kommunikációt a Back-end réteg és a kliens réteg között. 
+
+
+\subsection{A Vaadin komponensek}\label{sec:Vaadin komponensek}
+
+A Vaadin webalkalmazás-keretrendszer egy előre definiált komponens gyűjteményt biztosít a fejlesztők számára, a könnyebb munka érdekében. Ezen komponensek használata egyszerű, hiszen nagyon hasonlítanak az AWT és a SWING  - es komponensekhez. Az alap gyűjteményben található komponensek által felépíthető egy web alkalmazás teljes felhasználói felülete. Ezen komponensek bővíthetőek, teljesen személyre szabhatóak a CSS, HTML5, JavaScript technológiák által. A 4.1 ábra szemlélteti a Vaadin keretrendszer architektúráját, ahol megfigyelhető, hogy lehetőség van teljesen új komponensek definiálására is.
+A Vaadin keretrendszer alap komponensei között kapcsolatot, illetve összefüggéseket a 4.2 ábra szemlélteti. 
+\begin{figure}[h]
+  \centering
+  \pgfimage[width=1\linewidth]{images/vaadinComponents}
+  \caption[Vaadin keretrendszer komponensei]%
+  {Vaadin komponensek\\
+  {\white .}\hfill\url{https://inftec.atlassian.net/wiki/display/TEC/Vaadin}}
+  \label{fig:vaadinComponents}
+\end{figure} 
+
+A legfelső réteg a \texttt{Component} interfész, melyet az \texttt{AbstractComponent} absztrakt osztály implementál. Az \texttt{AbstractComponent} közös tulajdonságokkal látja el az őt származtató komponenseket. Az \texttt{AbstractComponent} osztályból származtatva van néhány egyszerű komponens, például a \texttt{Label}(Címke). A \texttt{Component} interfész mellet, megtalálható a Field interfész is, amely örökli a \texttt{Component} interfészt. Az \texttt{AbstractField} absztrakt osztály implementálja a Field interfész és örökli az \texttt{AbstractComponent} osztály tulajdonságait. Az \texttt{AbstractField} osztály a kijelöléssel, navigálással kapcsolatos komponensek alapjait képezi, például \texttt{Button}(Gomb). Az \texttt{AbstractComponent} osztály tulajdonságait örökli, az \texttt{AbstractComponentContainer} osztály is. Az \texttt{AbstractComponentConainer} osztályból származnak a konténer - alapú komponensek, például a Panel, illetve az elrendezést elősegítő komponensek, például \texttt{VerticalLayout}(Függőleges elrendezés).
+
+\section{További technólógiák}\label{sec:TovábbiTecnlólógiak}
+
+A RoboRun projekt esetén naplózáshoz az SLF4J volt használva. Az SLF4J több naplózási keretrendszer fölött képez absztrakciós szintet, így több különböző naplózási implementációt vehetünk igényben általa. A RoboRun projekt által igénybe vett implementáció az Apache licenc alatt álló LOG4J.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+IDE MÉG ELVILEG BEJÖN A HIBERNATE VAGY JPA.. ESETLEG A JDBC RŐL LEHETNE ÍRNI VALAMIT MEG A MYSQL- RŐL.
+
+IDE IS HA VAN MÉG VALAMI ÖTLETED AZ JÓL JÖN
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

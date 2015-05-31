@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.25)  20 MAY 2015 21:46
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.25)  31 MAY 2015 18:33
 entering extended mode
 **minta_dolgozat.tex
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\minta_dolgozat.tex
@@ -1039,35 +1039,30 @@ File: lstlang3.sty 2014/09/06 1.5e listings language file
 )
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\minta_dolgozat.aux
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\bevezeto.aux)
-(D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\alapfogalmak.aux
-
-LaTeX Warning: Label `fig:ALAP:sm1' multiply defined.
-
-
-LaTeX Warning: Label `fig:ALAP:sm1' multiply defined.
-
-)
+(D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\alapfogalmak.aux)
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\modszerek_es_eszkozok.aux
-) (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\osgi.aux)
+)
+(D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\felhasznalt_technologiak.
+aux) (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\osgi.aux)
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\rendszer_hasznalata.aux)
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\kovetkeztetesek.aux))
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Try loading font information for T1+ptm on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 72.
+LaTeX Font Info:    ... okay on input line 72.
+LaTeX Font Info:    Try loading font information for T1+ptm on input line 72.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
@@ -1089,7 +1084,7 @@ ABD: EveryShipout initializing macros
 )
 \c@lstlisting=\count159
 \AtBeginShipoutBox=\box88
-Package hyperref Info: Link coloring ON on input line 76.
+Package hyperref Info: Link coloring ON on input line 72.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -1098,43 +1093,43 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count160
 )
-LaTeX Info: Redefining \ref on input line 76.
-LaTeX Info: Redefining \pageref on input line 76.
-LaTeX Info: Redefining \nameref on input line 76.
+LaTeX Info: Redefining \ref on input line 72.
+LaTeX Info: Redefining \pageref on input line 72.
+LaTeX Info: Redefining \nameref on input line 72.
 
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\minta_dolgozat.out)
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\minta_dolgozat.out)
 \@outlinefile=\write4
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 79.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 79.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 75.
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `T1/ptm/b/n' tried instead on input line 79.
-LaTeX Font Info:    Try loading font information for T1+pcr on input line 90.
+(Font)              Font shape `T1/ptm/b/n' tried instead on input line 75.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 86.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\t1pcr.fd"
 File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
 ) [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 105.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 100.
 
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\psnfss\ot1phv.fd"
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 )
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 105.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 100.
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/phv/b/n' tried instead on input line 105.
+(Font)              Font shape `OT1/phv/b/n' tried instead on input line 100.
 
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
 []\T1/ptm/m/sc/14.4 JAKAB HU-NOR, PH.D, AS-SIS-TANT
  []
 
 
-Overfull \hbox (2.73601pt too wide) in paragraph at lines 105--105
+Overfull \hbox (2.73601pt too wide) in paragraph at lines 100--100
 []  []
  []
 
@@ -1142,24 +1137,24 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.105 
+l.100 
        [1 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/logo_ubb.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
 
  []
 
 
-Overfull \hbox (2.73601pt too wide) in paragraph at lines 105--105
+Overfull \hbox (2.73601pt too wide) in paragraph at lines 100--100
 []  []
  []
 
 [2 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/logo_ubb.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 105--105
+Underfull \hbox (badness 10000) in paragraph at lines 100--100
 
  []
 
 
-Overfull \hbox (2.73601pt too wide) in paragraph at lines 105--105
+Overfull \hbox (2.73601pt too wide) in paragraph at lines 100--100
 []  []
  []
 
@@ -1185,7 +1180,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.123 \include{bevezeto}
+l.116 \include{bevezeto}
                          [2
 
 ]
@@ -1247,32 +1242,32 @@ LaTeX Font Info:    Font shape `T1/ptm/bx/sl' in size <10.95> not available
 LaTeX Font Info:    Font shape `T1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `T1/ptm/b/n' tried instead on input line 11.
 
-Underfull \hbox (badness 10000) detected at line 21
+Underfull \hbox (badness 10000) detected at line 12
 \T1/ptm/m/n/8 1.
  []
 
 
-Overfull \hbox (11.35796pt too wide) in paragraph at lines 21--21
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 12--12
 [] 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 21
+Underfull \hbox (badness 10000) detected at line 14
 \T1/ptm/m/n/8 2.
  []
 
 
-Overfull \hbox (11.35796pt too wide) in paragraph at lines 21--21
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 14--14
 [] 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 21
+Underfull \hbox (badness 10000) detected at line 16
 \T1/ptm/m/n/8 3.
  []
 
 
-Overfull \hbox (11.35796pt too wide) in paragraph at lines 21--21
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 16--16
 [] 
  []
 
@@ -1280,24 +1275,64 @@ Overfull \hbox (11.35796pt too wide) in paragraph at lines 21--21
 
 
 
-]
-Overfull \hbox (273.1835pt too wide) in paragraph at lines 47--50
- [][] 
+] [6] [7]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--81
+
  []
 
-[6 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/images/glueConnection.
-png>]) [7 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/images/osgiCont
-ener.png>] [8 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/images/agen
-tUML.jpg>]
+
+Underfull \hbox (badness 10000) in paragraph at lines 76--81
+
+ []
+
+[8 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/images/glueConnection.
+png>] [9 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/images/osgiAlap.
+png>]) [10 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/images/alapUML
+.png>]
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\modszerek_es_eszkozok.tex
 3. fejezet
-[9
-
-
-
-]) [10] (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\osgi.tex
-4. fejezet
 [11
+
+
+
+]) [12]
+(D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\felhasznalt_technologiak.
+tex
+4. fejezet
+
+Underfull \hbox (badness 10000) detected at line 14
+\T1/ptm/m/n/8 1.
+ []
+
+
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 14--14
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 14
+\T1/ptm/m/n/8 2.
+ []
+
+
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 14--14
+[] 
+ []
+
+[13
+
+
+
+] [14 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/images/vaadinArchit
+ecture.png>] [15 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/images/v
+aadinComponents.png>]) [16]
+(D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\osgi.tex
+5. fejezet
+[17
 
 
 
@@ -1318,27 +1353,27 @@ File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/Activator.java
-[12 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/images/osgiArchitectu
+[18 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/images/osgiArchitectu
 re.png>])
 Underfull \hbox (badness 10000) in paragraph at lines 49--80
 
  []
 
-[13 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/images/batyuEleres.jp
-g>] [14 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/images/batyuLifeC
+[19 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/images/batyuEleres.jp
+g>] [20 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/images/batyuLifeC
 ycle.jpg>] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/ActivatorServic
 e.java)
-Underfull \hbox (badness 6173) in paragraph at lines 88--91
+Underfull \hbox (badness 6173) in paragraph at lines 89--92
 \T1/pcr/m/n/10.95 context) \T1/ptm/m/n/10.95 me-t�-du-sok-kal. A \T1/pcr/m/n/10
 .95 BundleContext\T1/ptm/m/n/10.95 - �l-tal �j szol-g�l-ta-t�-so-kat le-het re-
 giszt-r�l-ni
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 88--91
+Underfull \hbox (badness 10000) in paragraph at lines 89--92
 \T1/ptm/m/n/10.95 �s le-k�r-dez-ni. A \T1/pcr/m/n/10.95 context.registerService
 (Example.class.getName(), new
  []
@@ -1351,7 +1386,7 @@ eDictionary.java) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/GetService.java
-) [15] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+) [21] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/ServiceFactory.
@@ -1359,17 +1394,91 @@ java) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/RegisterService
-WithServiceFactory.java)) [16]
+WithServiceFactory.java)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+File: lstlang1.sty 2014/09/06 1.5e listings language file
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
+File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
+)
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+(D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/packaging.xml
+[22]) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+(D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/randomAgentDepe
+ndecy.xml) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+(D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/agentPom.xml)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Underfull \hbox (badness 7151) in paragraph at lines 139--140
+[]\T1/ptm/m/n/10.95 A Ro-bo-Run pro-jekt ese-t�-ben n�gy alap kom-po-nens-r�l b
+e-sz�l-he-t�nk. Ezen kom-po-nen-
+ []
+
+
+Underfull \hbox (badness 3088) in paragraph at lines 139--140
+\T1/ptm/m/n/10.95 sek az \T1/pcr/m/n/10.95 Agent\T1/ptm/m/n/10.95 (�gyn�k), az 
+\T1/pcr/m/n/10.95 Environment\T1/ptm/m/n/10.95 (K�rnyezet), az \T1/pcr/m/n/10.9
+5 Experiment\T1/ptm/m/n/10.95 (K�s�rlet), il-let-ve a
+ []
+
+[23] [24 <D:/Letöltések/Dropbox/Allamvizsga/DolgozatLatexben/images/osgiAlapk
+omponensek.png>]
+Underfull \hbox (badness 2181) in paragraph at lines 147--149
+[]\T1/ptm/m/n/10.95 A szol-g�l-ta-t�-sok le-k�-r�-se a szol-g�l-ta-t�s t�-ro-l�
+-b�l a \T1/pcr/m/n/10.95 BundleContext \T1/ptm/m/n/10.95 re-fe-ren-ci-�n ke-res
+z-
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 147--149
+\T1/ptm/m/n/10.95 t�l ke-r�l meg-va-l�-s�-t�s-ra. A ba-tyuk imp-le-men-t�l-j�k 
+a \T1/pcr/m/n/10.95 BundleActivator \T1/ptm/m/n/10.95 in-ter-f�szt, mely a
+ []
+
+
+Underfull \hbox (badness 2913) in paragraph at lines 147--149
+\T1/pcr/m/n/10.95 start(BundleContext context) \T1/ptm/m/n/10.95 �s \T1/pcr/m/n
+/10.95 stop(BundleContext context) \T1/ptm/m/n/10.95 me-t�-du-sok-kal
+ []
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+(D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/ServiceReferenc
+e.java) [25] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+(D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/RandomAgentServ
+iceFactory.java)) [26]
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\rendszer_hasznalata.tex
-5. fejezet
-) [17
+6. fejezet
+
+Underfull \hbox (badness 1137) in paragraph at lines 15--24
+\T1/ptm/m/n/10.95 - AZ ED-DIG KI-MA-RADT KOM-PO-NEN-SE-KET IS MEG-EM-L�-TE-NI, 
+MINT A PAC-KA-GES -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 15--24
+
+ []
+
+) [27
 
 
 
 ]
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\kovetkeztetesek.tex
-6. fejezet
-) [18
+7. fejezet
+) [28
 
 
 
@@ -1379,34 +1488,32 @@ Underfull \hbox (badness 6944) in paragraph at lines 59--63
 []$\T1/pcr/m/n/10.95 http : / / hu . wikipedia . org / wiki /$
  []
 
-) [19
+) [29
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 140.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 140.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 134.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 134.
  (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\minta_dolgozat.aux (D:\L
 etöltések\Dropbox\Allamvizsga\DolgozatLatexben\bevezeto.aux)
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\alapfogalmak.aux)
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\modszerek_es_eszkozok.aux
-) (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\osgi.aux)
+)
+(D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\felhasznalt_technologiak.
+aux) (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\osgi.aux)
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\rendszer_hasznalata.aux)
 (D:\Letöltések\Dropbox\Allamvizsga\DolgozatLatexben\kovetkeztetesek.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 140.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 140.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 134.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 134.
 Package rerunfilecheck Info: File `minta_dolgozat.out' has not changed.
-(rerunfilecheck)             Checksum: EB5717D52AD6A29120022F58B36BF8C6;2867.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 140.
+(rerunfilecheck)             Checksum: 665370C489803FA462A9C7F80280C2E6;4305.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 134.
  ) 
 Here is how much of TeX's memory you used:
- 26577 strings out of 493921
- 480639 string characters out of 3147282
- 673393 words of memory out of 3000000
- 29135 multiletter control sequences out of 15000+200000
+ 26805 strings out of 493921
+ 485471 string characters out of 3147282
+ 678962 words of memory out of 3000000
+ 29228 multiletter control sequences out of 15000+200000
  68980 words of font info for 84 fonts, out of 3000000 for 9000
  899 hyphenation exceptions out of 8191
  55i,9n,69p,1651b,2270s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1419,9 +1526,9 @@ ram Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX
 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
 fb>
-Output written on minta_dolgozat.pdf (22 pages, 521535 bytes).
+Output written on minta_dolgozat.pdf (32 pages, 741890 bytes).
 PDF statistics:
- 421 PDF objects out of 1000 (max. 8388607)
- 142 named destinations out of 1000 (max. 500000)
- 186 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 626 PDF objects out of 1000 (max. 8388607)
+ 237 named destinations out of 1000 (max. 500000)
+ 265 words of extra memory for PDF output out of 10000 (max. 10000000)
 

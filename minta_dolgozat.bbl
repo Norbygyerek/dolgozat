@@ -1,4 +1,4 @@
-\begin{thebibliography}{12}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -65,5 +65,10 @@ Szolgáltatás orientált architektúta wikipedia.
 Tortoise git.
 \newblock \url{https://code.google.com/p/tortoisegit/}.
 \newblock Utolsó megtekintés dátuma: 2015-05-15.
+
+\bibitem[vaa()]{vaadin}
+Vaadin hivatalos weboldal.
+\newblock \url{https://vaadin.com/home}.
+\newblock Utolsó megtekintés dátuma: 2015-05-30.
 
 \end{thebibliography}

@@ -1,16 +1,24 @@
 \select@language {magyar} \contentsline {chapter}{\numberline {1}Bevezet\IeC {\H o}}{3}{chapter.1}
 \select@language {magyar} \contentsline {chapter}{\numberline {2}Alapfogalmak}{5}{chapter.2}
 \select@language {magyar} \contentsline {section}{\numberline {2.1}A meger\IeC {\H o}s\IeC {\'\i }t\IeC {\'e}ses tanul\IeC {\'a}s}{5}{section.2.1}
-\select@language {magyar} \contentsline {section}{\numberline {2.2}A meger\IeC {\H o}s\IeC {\'\i }t\IeC {\'e}ses tanul\IeC {\'a}s algoritmusok kipr\IeC {\'o}b\IeC {\'a}l\IeC {\'a}s\IeC {\'a}nak alap l\IeC {\'e}p\IeC {\'e}sei}{5}{section.2.2}
-\select@language {magyar} \contentsline {section}{\numberline {2.3}Alapfogalmak bevezet\IeC {\'e}se}{5}{section.2.3}
-\select@language {magyar} \contentsline {chapter}{\numberline {3}Felhaszn\IeC {\'a}lt m\IeC {\'o}dszerek \IeC {\'e}s eszk\IeC {\"o}z\IeC {\"o}k}{9}{chapter.3}
-\select@language {magyar} \contentsline {section}{\numberline {3.1}Verzi\IeC {\'o}k\IeC {\"o}vet\IeC {\'e}s}{9}{section.3.1}
-\select@language {magyar} \contentsline {section}{\numberline {3.2}Projektmenedzsment}{9}{section.3.2}
-\select@language {magyar} \contentsline {section}{\numberline {3.3}Build rendszer}{10}{section.3.3}
-\select@language {magyar} \contentsline {chapter}{\numberline {4}Az OSGi keretrendszer}{11}{chapter.4}
-\select@language {magyar} \contentsline {section}{\numberline {4.1}Az OSGi keretrendszer}{11}{section.4.1}
-\select@language {magyar} \contentsline {section}{\numberline {4.2}Az OSGi architekt\IeC {\'u}ra}{11}{section.4.2}
-\select@language {magyar} \contentsline {subsection}{\numberline {4.2.1}OSGi szolg\IeC {\'a}ltat\IeC {\'a}sok}{14}{subsection.4.2.1}
-\select@language {magyar} \contentsline {chapter}{\numberline {5}A rendszer haszn\IeC {\'a}lata}{17}{chapter.5}
-\select@language {magyar} \contentsline {section}{\numberline {5.1}Teszt ind\IeC {\'\i }t\IeC {\'a}sa}{17}{section.5.1}
-\select@language {magyar} \contentsline {chapter}{\numberline {6}K\IeC {\"o}vetkeztet\IeC {\'e}s \IeC {\'e}s tov\IeC {\'a}bbfejleszt\IeC {\'e}si lehet\IeC {\H o}s\IeC {\'e}gek}{18}{chapter.6}
+\select@language {magyar} \contentsline {section}{\numberline {2.2}A meger\IeC {\H o}s\IeC {\'\i }t\IeC {\'e}ses tanul\IeC {\'a}s algoritmusok kipr\IeC {\'o}b\IeC {\'a}l\IeC {\'a}s\IeC {\'a}nak alap l\IeC {\'e}p\IeC {\'e}sei}{6}{section.2.2}
+\select@language {magyar} \contentsline {subsection}{\numberline {2.2.1}Kih\IeC {\'\i }v\IeC {\'a}sok a k\IeC {\'\i }s\IeC {\'e}rletek futtat\IeC {\'a}sa sor\IeC {\'a}n}{6}{subsection.2.2.1}
+\select@language {magyar} \contentsline {section}{\numberline {2.3}Alapfogalmak bevezet\IeC {\'e}se}{7}{section.2.3}
+\select@language {magyar} \contentsline {chapter}{\numberline {3}Felhaszn\IeC {\'a}lt m\IeC {\'o}dszerek \IeC {\'e}s eszk\IeC {\"o}z\IeC {\"o}k}{11}{chapter.3}
+\select@language {magyar} \contentsline {section}{\numberline {3.1}Verzi\IeC {\'o}k\IeC {\"o}vet\IeC {\'e}s}{11}{section.3.1}
+\select@language {magyar} \contentsline {section}{\numberline {3.2}Projektmenedzsment}{11}{section.3.2}
+\select@language {magyar} \contentsline {section}{\numberline {3.3}Build rendszer}{12}{section.3.3}
+\select@language {magyar} \contentsline {chapter}{\numberline {4}Felhaszn\IeC {\'a}lt techn\IeC {\'o}l\IeC {\'o}gi\IeC {\'a}k}{13}{chapter.4}
+\select@language {magyar} \contentsline {section}{\numberline {4.1}Glassfish}{13}{section.4.1}
+\select@language {magyar} \contentsline {section}{\numberline {4.2}Vaadin}{13}{section.4.2}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.2.1}A Vaadin architekt\IeC {\'u}ra}{14}{subsection.4.2.1}
+\select@language {magyar} \contentsline {subsection}{\numberline {4.2.2}A Vaadin komponensek}{15}{subsection.4.2.2}
+\select@language {magyar} \contentsline {section}{\numberline {4.3}Tov\IeC {\'a}bbi techn\IeC {\'o}l\IeC {\'o}gi\IeC {\'a}k}{16}{section.4.3}
+\select@language {magyar} \contentsline {chapter}{\numberline {5}Az OSGi keretrendszer}{17}{chapter.5}
+\select@language {magyar} \contentsline {section}{\numberline {5.1}Az OSGi keretrendszer}{17}{section.5.1}
+\select@language {magyar} \contentsline {section}{\numberline {5.2}Az OSGi architekt\IeC {\'u}ra}{17}{section.5.2}
+\select@language {magyar} \contentsline {subsection}{\numberline {5.2.1}OSGi szolg\IeC {\'a}ltat\IeC {\'a}sok}{20}{subsection.5.2.1}
+\select@language {magyar} \contentsline {section}{\numberline {5.3}A RoboRun projekt \IeC {\'e}s az OSGi}{22}{section.5.3}
+\select@language {magyar} \contentsline {chapter}{\numberline {6}A rendszer fel\IeC {\'e}p\IeC {\'\i }t\IeC {\'e}se \IeC {\'e}s haszn\IeC {\'a}lata}{27}{chapter.6}
+\select@language {magyar} \contentsline {section}{\numberline {6.1}Nem tudom}{27}{section.6.1}
+\select@language {magyar} \contentsline {chapter}{\numberline {7}K\IeC {\"o}vetkeztet\IeC {\'e}s \IeC {\'e}s tov\IeC {\'a}bbfejleszt\IeC {\'e}si lehet\IeC {\H o}s\IeC {\'e}gek}{28}{chapter.7}
