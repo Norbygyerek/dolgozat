@@ -20,5 +20,10 @@
 \select@language {magyar} \contentsline {subsection}{\numberline {5.2.1}OSGi szolg\IeC {\'a}ltat\IeC {\'a}sok}{20}{subsection.5.2.1}
 \select@language {magyar} \contentsline {section}{\numberline {5.3}A RoboRun projekt \IeC {\'e}s az OSGi}{22}{section.5.3}
 \select@language {magyar} \contentsline {chapter}{\numberline {6}A rendszer fel\IeC {\'e}p\IeC {\'\i }t\IeC {\'e}se \IeC {\'e}s haszn\IeC {\'a}lata}{27}{chapter.6}
-\select@language {magyar} \contentsline {section}{\numberline {6.1}Nem tudom}{27}{section.6.1}
-\select@language {magyar} \contentsline {chapter}{\numberline {7}K\IeC {\"o}vetkeztet\IeC {\'e}s \IeC {\'e}s tov\IeC {\'a}bbfejleszt\IeC {\'e}si lehet\IeC {\H o}s\IeC {\'e}gek}{28}{chapter.7}
+\select@language {magyar} \contentsline {section}{\numberline {6.1}Specifik\IeC {\'a}ci\IeC {\'o}}{27}{section.6.1}
+\select@language {magyar} \contentsline {section}{\numberline {6.2}A rendszer fel\IeC {\'e}p\IeC {\'\i }t\IeC {\'e}se}{27}{section.6.2}
+\select@language {magyar} \contentsline {subsection}{\numberline {6.2.1}Webes fel\IeC {\"u}let}{31}{subsection.6.2.1}
+\select@language {magyar} \contentsline {subsection}{\numberline {6.2.2}Webes fel\IeC {\"u}let funkcional\IeC {\'\i }t\IeC {\'a}sai}{31}{subsection.6.2.2}
+\select@language {magyar} \contentsline {section}{\numberline {6.3}A rendszer telep\IeC {\'\i }t\IeC {\'e}se}{32}{section.6.3}
+\select@language {magyar} \contentsline {section}{\numberline {6.4}Tesztek futtat\IeC {\'a}s\IeC {\'a}nak folyamata}{33}{section.6.4}
+\select@language {magyar} \contentsline {chapter}{\numberline {7}K\IeC {\"o}vetkeztet\IeC {\'e}s \IeC {\'e}s tov\IeC {\'a}bbfejleszt\IeC {\'e}si lehet\IeC {\H o}s\IeC {\'e}gek}{34}{chapter.7}

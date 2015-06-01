@@ -1,6 +1,6 @@
 %!TEX root = dolgozat.tex
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\chapter{A rendszer felépítése és használata}\label{ch:FELEPITES}
+\chapter{A rendszer felépítése és használata}\label{ch:Felepites}
 
 \begin{osszefoglal}
 	E fejezet célja részletesen ismertetni a rendszer teljes architektúrájának felépítését és a fejlesztés során felmerülő problémák is kiemelésre kerülnek. A fejezet második részében a rendszer használatának ismertetése található. 
@@ -8,20 +8,148 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Nem tudom}\label{sec:Igen}
+\section{Specifikáció}\label{sec:Specifikacio}
 
-	
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-ENNEK MÉG NEM FOGTAM NEKI! 
-\\-SZERETNÉM RÉSZLETEZNI AZ EGÉSZ ARCHITEKTÚRÁT, VALAMI DIAGRAMOKAT.
-\\- LEÍRNI AZ EGÉSZ RENDSZER MŰKÖDÉSÉT, KI- KIT HÍV MEG, HOGY STB.
-\\- AZ EDDIG KIMARADT KOMPONENSEKET IS MEGEMLÍTENI, MINT A PACKAGES - AMIBEN VANNAK AZ ILYEN TASKSPEC MEG ACTION IMPLEMENTÁCIÓK ÉS AZ AGENTENVIRONMENTLIST KOMPONENSRŐL IS BESZÉLNÉK AMI A LISTÁKAT TARTALMAZZA, AMELYET A WEBES FELÜLET KIÍR.
-\\- ARRÓL, HOGY AZ ADATBÁZISBA MI KERÜL BE. ESETLEG, HOGY HOGYAN?!
-\\- WEBES FELÜLET MEGVALÓSÍTÁS RÉSZLETEI + HASZNÁLAT
+A RoboRun projekt alapelképzelése egy olyan szoftver megalkotása, amely teljesen önállóan képes futtatni megerősítéses tanulással kapcsolatos algoritmusokat. Ezen algoritmusok futtatása, egy távoli szervergépen történik, amely folyamatosan elérhető. A tesztek futtatása szempontjából fontos a gyorsaság és a megbízhatóság. Ezen tulajdonságok mellett még szükség van arra, hogy a rendszer dinamikusságot kölcsönözzön az egyes komponenseknek. Minden nagyobb rész különálló komponensként legyen megvalósítva, a könnyebb átláthatóság, tesztelhetőség, módosíthatóság érdekében. Fontos tulajdonság, hogy a rendszer képes legyen párhuzamosan több teszt futtatására. A teszt eredmények megfelelően el kell legyenek tárolva egy központi adatbázisban. Az adatbázisban található bejegyzések hozzáférését egy webes felület biztosítja. A webes felület az adatbázis bejegyzések hozzáférése mellett, információkat szolgáltat a rendszerbe telepített aktív \texttt{Agent} és \texttt{Environment} példányokról illetve a tesztek állapotairól.
+
+A webes felületen a felhasználónak lehetősége van megtekinteni a rendszerbe telepített és használható \texttt{Agent} és \texttt{Environment} példányokat, melyek alapján új \texttt{Experiment}-eket lehet implementálni. Megtekinthetőek az aktív tesztek állapotai és különböző fontos informáciok az aktív tesztekről, például: indítás ideje, aktuálisan hol tart, milyen \texttt{Agent} illetve \texttt{Environment} példánnyal fut a teszt. A webes felületen megtekinthetőek a már befejeződött tesztek által generált adatok illetve statisztikai a hozzájuk tartozó statisztika. 
+
+
+\section{A rendszer felépítése}\label{sec:Felepites}
+A RoboRun projekt négy alapkomponensre épül. Melyek az \texttt{Agent}, \texttt{Environment}, \texttt{Experiment} és \texttt{RoboCommunication} komponensek formájában vannak megvalósítva. Az \texttt{Agent} komponens valósítja meg a mesterséges tanulási algoritmusokat. Az \texttt{Environment} a környezet, amelyet az \texttt{Agent} próbál megtanulni helyesen használni. Az \texttt{Experiment} az egyes tesztek belépési pontjaként szolgál, ő határozza meg az epizódok és az epizódonkénti maximális lépések számát. A \texttt{RoboCommunication} komponens felelős az előbbi három komponens között teljes kommunikáció lebonyolításáért egy teszt során, melyet a \ref{fig:RoboRunAlapKomponensek} ábra szemléltet.
+
+\begin{figure}[h!]
+  \centering
+  \pgfimage[width=1\linewidth]{images/alapKomponens}
+  \caption[A RoboRun projekt alapkomponensei]%
+  {A RoboRun projekt Alap komponensei\\
+  {\white .}\hfill\url{}}
+  \label{fig:RoboRunAlapKomponensek}
+\end{figure}
+
+Az \texttt{Experiment} komponens kivételével, minden alapkomponens egy neki megfelelő interfészt implementál. Ez által kerül megvalósításra az, hogy a rendszerben egyszerre több \texttt{Agent} és \texttt{Environment} példány lehet telepítve, illetve ezek cseréje és módosítása is lényegesen könnyebb. A \texttt{RoboCommunication} komponensből egy található a rendszerben, viszont ez is könnyedén módosítható vagy cserélhető anélkül, hogy az egyéb komponenseket módosítani kellene.  A RoboRun projekt esetén az alapkomponensek és a hozzájuk tartozó interfészeket a \ref{fig:RoboRunKompEsInterfesz}ábra szemlélteti.
+
+\begin{figure}[h!]
+  \centering
+  \pgfimage[width=1\linewidth]{images/komponensInterfeszekkel}
+  \caption[A RoboRun projekt alapkomponensei és interfészek]%
+  {A RoboRun projekt alapkomponensei és interfészek\\
+  {\white .}\hfill\url{}}
+  \label{fig:RoboRunKompEsInterfesz}
+\end{figure}
+
+
+Az alapkomponenseknek szükségük van néhány saját típusra a tesztek futtatásához. Ezen típusok egy külön batyuban kaptak helyet, melynek neve \texttt{packages}. Ezen típusok az Rl-Glue projektből lettek átvéve és felhasználva módosítás nélkül. A \texttt{packages} batyu közzéteszi a különböző csomagjait, amelyet az alapkomponensek importálnak. A \texttt{packages} batyu által közzétett csomagok:
 \\
-\\AMENNYIBEN A TÖBBI RÉSZ RENDBEN VAN SZERETNÉM EZZEL A FEJEZETTEL KITÖLTENI A HIÁNYZÓ ~8 - 10 oldalt.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\texttt{taskSpec} - amely meghatározza a tesztek során az egyes lépésekhez szükséges adatokat.
+\\
+\texttt{types} - amely meghatározza a tesztekhez tartozó típusokat, például az \texttt{Action} vagy az \texttt{Observation} típusok.
 
+\begin{figure}[h!]
+  \centering
+  \pgfimage[width=1\linewidth]{images/packagesKomponens}
+  \caption[Az alapkomponensek által felhasznál komponens]%
+  {Az alapkomponensek által felhasznál komponens\\
+  {\white .}\hfill\url{}}
+  \label{fig:PackagesKomponens}
+\end{figure}
+
+
+Az adat hozzáférési réteg szintén egy batyuként van definiálva, amely egy különálló komponensként működik. Legfőbb előnye szint a könnyen cserélhetőség. Amennyiben bármilyen más implementációra van szükség a rendszer és az adatbázis között, e réteg könnyen cserélhető akár a teljes rendszer leállítása nélkül is. Az adat hozzáférési réteg a \texttt{dataModel} nevet kapta, mely közzéteszi az \texttt{edu.bbte.dataModel} csomagját. Ezt a csomagot a \texttt{RoboCommunication} komponens fogja importálni és használni. A \texttt{RoboCommunication} komponens rendelkezik a egy teszt futtatása során az összes olyan információval, amelyre szükség van egy adatbázis bejegyzéshez. Az adatbázisba bekerülő adatok egy teszthez a következők: az \texttt{Agent} neve, az \texttt{Environment} neve, a teszt elkezdésének ideje, illetve két fájl. A fájlok nevei a teszt indításának ideje(ÉvHónapNapÓraPerc + egy véletlenszerűen generált szám + Results vagy Stat) formátumúak. A \texttt{Results} végződésű fájl tartalmazza a teszt alatt létrejött összes adatot, a \texttt{Stat} végződésű fájl statisztikai adatokat tartalmaz a tesztekről. A fájlok a webes felület segítségével érhetőek el. A \texttt{Results} végződésű fájl letölthető a nagy adatmennyiséget figyelembe véve. A statisztikai adatok megtekinthetőek a webes felületen. A \ref{fig:dataModelRobo} ábra szemlélteti a kapcsolatot az adat hozzáférés réteg és a \texttt{RoboCommunication} komponensek között. 
+
+\begin{figure}[h!]
+  \centering
+  \pgfimage[width=1\linewidth]{images/dataModelRobo}
+  \caption[Az adathozzáférési réteg és a RoboCommunication]%
+  {Az adathozzáférési réteg és a RoboCommunication\\
+  {\white .}\hfill\url{}}
+  \label{fig:dataModelRobo}
+\end{figure}
+
+A webes megjelenítéshez szükség van egy olyan komponensre, amely összegyűjti az adatokat a többi komponenstől és ezt átadja a webes felületnek. Erre a feladatra a \texttt{agentEnvironmentList} komponens van kijelölve. E batyu folyamatosan értesül arról, hogyha új \texttt{Agent} vagy \texttt{Environment} példánnyal gazdagodik a rendszer, illetve arról is ha törlésre kerül valamelyik. Az \texttt{agentEnvironmentList} komponens közzéteszi az \texttt{edu.bbte.agentEnvironmentList} csomagját, melyet minden \texttt{Agent} és \texttt{Environment} komponens importál, így beleírhatják magukat induláskor és törölhetik magukat leálláskor. Ezek megvalósítása az \texttt{Activator} osztályok \texttt{start()} és \texttt{stop()} metódusaiban történik, annak érdekében, hogy biztosan végrehajtódjon a listába való írás illetve törlés. E komponens feladatai közé tartozik az is, hogy a webes felületet tájékoztassa az éppen aktuálisan futó tesztek állapotairól. Ehhez szükséges az, hogy  \texttt{RoboCommunication} komponens is importálja az \texttt{edu.bbte.agentEnvironmentList} csomagot, mely rendelkezik egy \texttt{AgentEnvironment} osztállyal. Az \texttt{AgentEnvironment} osztály \texttt{addTest()} metódusának utolsó paramétere egy \texttt{Robo} típusú objektum, mely az aktuális teszt \texttt{RoboCommunication} osztály egy példánya. Így e példány \texttt{getPercent()} metódusa által lekérhető az aktuális teszt állapota. 
+Ahhoz, hogy a webes felülethez eljusson az információ, szükség van egy köztes rétegre, amely a \texttt{webFragment} nevet viseli. A \texttt{webFragment} komponens szintén egy batyu az OSGi konténerben, amely elkéri a szükséges információkat az \texttt{agentEnvironmentList} komponenstől és ezt átadja a \texttt{web} komponensnek megjelenítésre. Ezen komponensek kapcsolatáról a \ref{fig:agentEnvironmentListKomponens} ábra nyújt összefogóbb képet.
+
+\begin{figure}[h!]
+  \centering
+  \pgfimage[width=0.9\linewidth]{images/agentEnvironmentListKomponens}
+  \caption[A webes felület megjelenítéséért felelős komponensek]%
+  {A webes felület megjelenítéséért felelős komponensek\\
+  {\white .}\hfill\url{}}
+  \label{fig:agentEnvironmentListKomponens}
+\end{figure}
+
+\subsection{Webes felület}\label{subsec:WebesFelulet}
+
+A RoboRun projekt webes felületének megvalósítása a Vaadin keretrendszer által biztosított komponensek felhasználásával történik. A megjelenítésért a \texttt{web} komponens felelős, mely rendelkezik egy \texttt{FragmentFactory} interfésszel. A \texttt{FragmentFactory} interfésznek egyetlen egy metódusa van , a \texttt{getFragment()} metódus, amely egy \texttt{com.vaadin.ui.Component} - típusú komponenst térít vissza. Ezt az interfészt implementálja a \texttt{webFragment} komponens. Erre az interfészre azért van szükség, mert így megoldható, hogy a webes felület egyszerre több fragmentből álljon össze. A RoboRun projekt esetén csak egy fragmentre van szükség, viszont bármilyen új funkció úgy hozzáadható a webes felülethez, hogy a régieket kellene módosítani, illetve anélkül, hogy a rendszert újra kellene indítani. Ezzel is megkönnyítve a könnyed továbbfejlesztést. Ahhoz, hogy a fragmentek könnyedén telepíthetőek legyenek, szükség van használni az OSGi keretrendszer által kínált \texttt{SeviceTracker} osztályt, mely a \texttt{ServiceTrackerCustomizer} interfészt implementálja. Három metódussal rendelkezik az interfész. Az \texttt{addinService()} metódussal mely egy szolgáltatás referenciát vár paraméterként, illetve a \texttt{modifiedService} és a \texttt{removedService}, amelyek egy szolgáltatás referenciát és egy szolgáltatást várnak paraméterként. A \texttt{ServiceTracker} - osztály példányosítása a \texttt{web} komponens \texttt{VaadinActivator} osztályában történik. A példányosítás után közvetlen megnyitásra kerül a \texttt{ServiceTracker}. A megnyitást követően, a webes felület értesül arról, ha új fragment kerül telepítésre, illetve arról, ha egy fragmentet töröltek, így az oldal újra betöltése után már használhatóak is az új funkcionalitások.
+
+\subsection{Webes felület funkcionalításai}\label{subsec:WebesFeluletFunkcioi}
+Az oldal betöltődését követően a felhasználó az aktív tesztek állapotairól szerezhet tudomást. Az aktív tesztekről látható, hogy melyik \texttt{Agent} és \texttt{Environment} példánnyal dolgozik az adott teszt. Látható a teszt indításának ideje és az, hogy a teszt éppen hol tart.
+\begin{figure}[h!]
+  \centering
+  \pgfimage[width=0.9\linewidth]{images/webAktivTesztek}
+  \caption[Aktív tesztek nézet]%
+  {Aktív tesztek nézet\\
+  {\white .}\hfill\url{}}
+  \label{fig:webAktivTesztek}
+\end{figure}
+
+A \ref{fig:webAktivTesztek} kép szemlélteti ezt a nézetet.
+
+Az \texttt{Agent and Environment List} menüpont alatt találhatóak a rendszerbe telepített \texttt{Agent} és \texttt{Environment} példányok listája. A nézet két oszlopot tartalmaz. Az első oszlopban találhatóak a telepített \texttt{Agent} és \texttt{Environment} példányok nevei, míg a második oszlopban található, hogy hogyan hivatkozhatunk rájuk, amennyiben szeretnénk lekérdezni valamelyik szolgáltatást. Ezt a \ref{fig:webAktivBatyuk} kép szemlélteti.
+
+\begin{figure}[h!]
+  \centering
+  \pgfimage[width=0.9\linewidth]{images/webAktivBatyuk}
+  \caption[Aktív Agent és Environmentek nézet]%
+  {Aktív Agent és Environmentek nézet\\
+  {\white .}\hfill\url{}}
+  \label{fig:webAktivBatyuk}
+\end{figure}
+
+Az tesztek összesítő adatait illetve a statisztikai adatokat a \texttt{Results} menüpont alatt érhetjük el. Itt található egy táblázat, melynek egy sora megfelel egy adatbázis bejegyzésnek. Az első oszlop az \texttt{Agent} nevét tartalmazza, a második oszlop az \texttt{Environment} nevét tartalmazza, a harmadik oszlop a \texttt{Start time}, mely megadja a teszt indításának idejét. A negyedik oszlop az \texttt{All Result}, amely az aktuális teszt által generált összes információt tartalmazza. Az ötödik oszlop a \texttt{Statistics}, amely az aktuális teszthez tartozó statisztikai adatokat tartalmazza. Ez utóbbi megtekinthető a webes felületen, előbbi viszont letöltést igényel a nagy adatmennyiség miatt. E nézetet a \ref{fig:webResults} kép szemlélteti.
+
+\begin{figure}[h!]
+  \centering
+  \pgfimage[width=0.9\linewidth]{images/webResults}
+  \caption[A teszt eredményeket tartalmazó nézet]%
+  {A teszt eredményeket tartalmazó nézet\\
+  {\white .}\hfill\url{}}
+  \label{fig:webResults}
+\end{figure}
+
+
+
+
+\section{A rendszer telepítése}\label{sec:Telepites}
+A rendszer telepítéséhez szükség van egy GlassFish alkalmazás szerverre és egy adatbázis kezelő rendszerre. A rendszer telepítése egyszerű, hiszen a komponensek különálló egységek. Az egyetlen dolog amire figyelni kell, a komponensek telepítésének sorrendje, mivel az egyes komponensek függnek más komponensektől.
+\\
+A komponensek telepítésének sorrendje:
+\\
+- \texttt{packages} - amely tartalmazza a szükséges típusokat
+\\
+- \texttt{agent} - amely az Agent példányok interfészét tartalmazza
+\\
+- \texttt{environment} - amely az Environment példányok interfészét tartalmazza
+\\
+- \texttt{robo} - amely a \texttt{RoboCommunication} komponens interfészét tartalmazza
+\\
+- \texttt{dataModel} - az adatbázis hozzáférési réteget tartalmazza
+\\
+- \texttt{agentEnvironmentList} - amely a webes felülethez szükséges adatokat gyűjti össze a komponensektől
+\\
+- \texttt{web} - amely a webes felület megjelenítéséért felelős
+\\
+- \texttt{webFragment} - amely a webes felülethez szolgáltat funkcionalitásokat
+\\
+- \texttt{RoboCommunication} - amely az egyes \texttt{Agent} és \texttt{Environment} példányok közötti kommunikációért felelős
+\\
+Ezen komponensek telepítése után következhet az \texttt{Agent} és \texttt{Environment} példányok telepítése, majd az \texttt{Experiment} példányok telepítése, amelyek elindítanak egy tesztet.
+
+\section{Tesztek futtatásának folyamata}\label{sec:TesztekFolyamata}
+Egy teszt futtatásának folyamata
+
+
+IDE EGY FOLYAMAT ÁBRA
 
 
 
