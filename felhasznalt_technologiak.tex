@@ -1,23 +1,29 @@
-\chapter{Felhasznált technólógiák}\label{ch:Technólógiák}
+\chapter{Felhasznált technólógiák és eszközök}\label{ch:TechnologiakEsEszkozok}
 
 \begin{osszefoglal}
-	A fejezet ismerteti a Glassfish alkalmazás szervert és ennek szerepét a RoboRun projekt esetében, illetve a Vaadin technológiát, mely a projekt webes felületének megvalósításában játszott szerepet.
+	A fejezet ismerteti a RoboRun projekt által felhasznált alkalmazás szervert és ennek szerepét, illetve a webalkalmazáshoz felhasznált technológiát, mely a projekt webes felületének megvalósításában játszott szerepet. A fejezet célja, hogy bemutassa azon eszközöket, amelyek meghatározó szerepet töltöttek be a projekt megalkotása során.
 \end{osszefoglal}
 
 
-\section{Glassfish}\label{sec:Glassfish}
+\section{Alkalmazásszerver}\label{sec:Glassfish}
 	
-	A Glassfish alkalmazásszerver a Java Enterprise Edition specifikáció referencia implementációja. Az Oracle tulajdonába tartozik és teljesen nyílt forráskódú, viszont vásárolható hozzá kereskedelmi licensz támogatás, amelyben az Oracle saját megoldásai is helyet kapnak, például képes teljes domainek mentésére és visszaállítására. A Glassfish fontos tulajdonsága, hogy képes OSGi konténerek kezelésére. A RoboRun projekt esetén a Glassfish alkalmazásszerverre telepített OSGi konténerben vannak elhelyezve a különálló komponensek, amelyek együtt alkotják a RoboRun projektet. A Glassfish alkalmazásszerver révén távolról is telepíthetőek könnyedén új komponensek, illetve használhatóak. A Glassfish manageli a RoboRun projekt webes felületét is, mely Vaadin\cite{vaadin} a technológián alapszik. 
+	A RoboRun projekt megvalósításához elengedhetetlen egy alkalmazásszerver használata, hiszen az OSGi konténernek szüksége van egy alkalmazásszerverre, amely képes futtatni és ez által folyamatosan elérhetővé tenni az alkalmazást az interneten keresztül. Bővebben az OSGi specifikációról a \ref{ch:OSGI} fejezetben lehet olvasni.
+	
+	 Az alkalmazásszerver nem más mint egy szoftver keretrendszer, mely lehetőséget biztosít tetszőleges alkalmazások futtatására. A Java Enterprise Edition specifikáció több referencia implementációval rendelkezik. Ilyen referencia implementációk például: JBoss As\footnote{\href {http://jbossas.jboss.org/}{http://jbossas.jboss.org/}}, GlassFish\footnote{\href {https://glassfish.java.net/}{https://glassfish.java.net/}}, WebSphere\footnote{\href {http://www.ibm.com/software/websphere}{http://www.ibm.com/software/websphere}}, WebLogic\footnote{\href {http://www.oracle.com/technetwork/middleware/weblogic/overview/index-085209.html}{http://www.oracle.com/technetwork/middleware/weblogic/overview/index-085209.html}}.
+	
+	A RoboRun projekt tervezésekor ezen alkalmazásszerverek közül a Glassfish referencia implementációja tűnt megfelelőnek, mely az Oracle tulajdonába tartozik és teljesen nyílt forráskódú, viszont vásárolható hozzá kereskedelmi licensz támogatás, amelyben az Oracle saját megoldásai is helyet kapnak, például képes teljes domainek mentésére és visszaállítására. A Glassfish fontos tulajdonsága, hogy képes OSGi konténerek kezelésére. A RoboRun projekt esetén a Glassfish alkalmazásszerverre telepített OSGi konténerben vannak elhelyezve a különálló komponensek, amelyek együtt alkotják a RoboRun projektet. A Glassfish alkalmazásszerver révén távolról is telepíthetőek könnyedén új komponensek, illetve használhatóak. A Glassfish manageli a RoboRun projekt webes felületét is.
 
-\section{Vaadin}\label{sec:Vaadin}
+\section{Webalkalmazás}\label{sec:Vaadin}
 
-A Vaadin egy olyan Java webalkalmazás-keretrendszer, amely lehetőséget biztosít gazdag webalkalmazások\footnote{\href {http://hu.wikipedia.org/wiki/Rich\_Internet\_Application}{http://hu.wikipedia.org/wiki/Rich\_Internet\_Application}} fejlesztésére. A Vaadin lehetőséget nyújt a felület Java nyelvben történő implementálására, illetve egy AJAX alapú kommunikációs modellt biztosít. A Vaadin architektúra két fő részből tevődik össze: a kliens oldali részből, amely tartalmazza a Google Web Toolkit -et\footnote{\href {http://hu.wikipedia.org/wiki/Google\_Web\_Toolkit}{http://hu.wikipedia.org/wiki/Google\_Web\_Toolkit}} és amely a Java kódot, JavaScript kódra fordítja, illetve a szerver oldali részből, amely JavaServlet technológiát használ.
+	A projekt webes felületének megvalósítására rengeteg módszer, eszköz és keretrendszer áll rendelkezésre, melyek közül lehet választani. A RoboRun projekt tervezésekor fontos szempont volt a könnyed és gyors használhatóság, illetve a dinamikus módosíthatóság tulajdonsága. Ezek alapján a Vaadin webalkalmazás-keretrendszerre esett a választás.
+	
+	A Vaadin egy olyan Java webalkalmazás-keretrendszer, amely lehetőséget biztosít gazdag webalkalmazások\footnote{\href {http://hu.wikipedia.org/wiki/Rich\_Internet\_Application}{http://hu.wikipedia.org/wiki/Rich\_Internet\_Application}} fejlesztésére. A Vaadin lehetőséget nyújt a felület Java nyelvben történő implementálására, illetve egy AJAX alapú kommunikációs modellt biztosít. A Vaadin architektúra két fő részből tevődik össze: a kliens oldali részből, amely tartalmazza a Google Web Toolkit -et\footnote{\href {http://hu.wikipedia.org/wiki/Google\_Web\_Toolkit}{http://hu.wikipedia.org/wiki/Google\_Web\_Toolkit}} és amely a Java kódot, JavaScript kódra fordítja, illetve a szerver oldali részből, amely JavaServlet technológiát használ.
 A szerver oldali rész tartalmazza a felhasználó felület létrehozásához szükséges komponenseket. Ezen komponensek nagyon hasonlítanak a Java-ban írt standard alkalmazásoknál használt AWT, illetve SWING komponensekre. A Vaadin-os komponensek is figyelőket és eseményeket használnak. Az alapértelmezett komponens és téma készlet mellett, telepíthetőek különböző kiegészítők a még könnyebb használat és a még látványosabb felhasználói élmény érdekében. A komponensek személyre szabhatóak a CSS, HTML5, JavaScript technológiák felhasználása által.
 
 \subsection{A Vaadin architektúra}\label{sec:Vaadin architektura}
 
 A Vaadin webalkalmazás-keretrendszer architektúrája két fő részre osztható fel. A kliens oldal által valósul meg a megjelenítés, amely JavaScript formájában jelenik meg a böngészőben. A szerver oldali rész  mely biztosítja a komponensek könnyed elérését és használatát.
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \pgfimage[width=0.8\linewidth]{images/vaadinArchitecture}
   \caption[Vaadin keretrendszer architektúrája]%
@@ -35,7 +41,7 @@ A szerver felelős az üzleti logika megvalósításáért. A Service réteg val
 
 A Vaadin webalkalmazás-keretrendszer egy előre definiált komponens gyűjteményt biztosít a fejlesztők számára, a könnyebb munka érdekében. Ezen komponensek használata egyszerű, hiszen nagyon hasonlítanak az AWT és a SWING  - es komponensekhez. Az alap gyűjteményben található komponensek által felépíthető egy web alkalmazás teljes felhasználói felülete. Ezen komponensek bővíthetőek, teljesen személyre szabhatóak a CSS, HTML5, JavaScript technológiák által. A 4.1 ábra szemlélteti a Vaadin keretrendszer architektúráját, ahol megfigyelhető, hogy lehetőség van teljesen új komponensek definiálására is.
 A Vaadin keretrendszer alap komponensei között kapcsolatot, illetve összefüggéseket a 4.2 ábra szemlélteti. 
-\begin{figure}[h]
+\begin{figure}[h!]
   \centering
   \pgfimage[width=1\linewidth]{images/vaadinComponents}
   \caption[Vaadin keretrendszer komponensei]%
@@ -46,13 +52,46 @@ A Vaadin keretrendszer alap komponensei között kapcsolatot, illetve összefüg
 
 A legfelső réteg a \texttt{Component} interfész, melyet az \texttt{AbstractComponent} absztrakt osztály implementál. Az \texttt{AbstractComponent} közös tulajdonságokkal látja el az őt származtató komponenseket. Az \texttt{AbstractComponent} osztályból származtatva van néhány egyszerű komponens, például a \texttt{Label}(Címke). A \texttt{Component} interfész mellet, megtalálható a Field interfész is, amely örökli a \texttt{Component} interfészt. Az \texttt{AbstractField} absztrakt osztály implementálja a Field interfész és örökli az \texttt{AbstractComponent} osztály tulajdonságait. Az \texttt{AbstractField} osztály a kijelöléssel, navigálással kapcsolatos komponensek alapjait képezi, például \texttt{Button}(Gomb). Az \texttt{AbstractComponent} osztály tulajdonságait örökli, az \texttt{AbstractComponentContainer} osztály is. Az \texttt{AbstractComponentConainer} osztályból származnak a konténer - alapú komponensek, például a Panel, illetve az elrendezést elősegítő komponensek, például \texttt{VerticalLayout}(Függőleges elrendezés).
 
-\section{További technólógiák}\label{sec:TovábbiTecnlólógiak}
-
-A RoboRun projekt esetén naplózáshoz az SLF4J volt használva. Az SLF4J több naplózási keretrendszer fölött képez absztrakciós szintet, így több különböző naplózási implementációt vehetünk igényben általa. A RoboRun projekt által igénybe vett implementáció az Apache licenc alatt álló LOG4J.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-IDE MÉG ELVILEG BEJÖN A HIBERNATE VAGY JPA.. ESETLEG A JDBC RŐL LEHETNE ÍRNI VALAMIT MEG A MYSQL- RŐL.
+\section{Verziókövetés}
 
-IDE IS HA VAN MÉG VALAMI ÖTLETED AZ JÓL JÖN
+Napjainkban egyre nagyobb szükség van arra, hogy egy projekt esetén a munka könnyedén megosztható és hordozható legyen a fejlesztők közt. E mellett nagyon fontos a fejlesztési folyamat monitorizálása. Ezen technológiák nélkül szinte elképzelhetetlen a szoftverfejlesztés, úgy csoportos környezetben mint egyedül.
+
+	E célra fejlesztették  ki a verziókövető rendszereket és a projektmenedzsment eszközöket melyek által könnyedén megoszthatóvá válik a fejlesztői munka és folyamatosan ellenőrizhető a fejlesztés folyamata.  
+	
+	A verziókövető rendszer által  folyamatosan nyomon követhető a projekt fejlődése és ellenőrizhető az egyénenkénti haladás is. Könnyed visszaállítási lehetőséget biztosít arra az esetre, ha valami történne a lokális gépünkön tárolt forrás állományokkal vagy ha bármi hiba történne a fejlesztés során ami visszaállítást igényel. Legnagyobb haszna a verzió követő rendszereknek, az olyan projekteknél van, amelyet több fejlesztő fejleszt egyszerre. Hiszen általában ilyenkor a projekt teljes forrásállománya egy központi tárolóban van elhelyezve ahová mindenki beteszi a változtatásait. Így nagyon egyeszűen követhető, hogy melyik fejlesztő milyen fázisban tart. 
+	
+	A RoboRun projekt fejlesztése során a forrásállományok tárolására és a fejlesztés nyomkövetésére felhasznált verziókövető rendszer a Git\citep{git}, amely nyílt forráskódú és teljesen ingyenes. Könnyedén megoszthatóak a forrásállományok. A projekt szerzője által használt kliensalkalmazás a  TortoiseGit\citep{tortoisegit}. A TortoiseGit szintén ingyenes szoftver, melyet szükséges telepíteni. Használata egyszerű. A konzol mellett, rendelkezik egy felhasználóbarát grafikus felülettel is, mely még inkább megkönnyíti a használatát.
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projektmenedzsment}
+
+"A projektmenedzsment az erőforrások szervezésével és azok irányításával foglalkozó szakterület, melynek célja, hogy az erőforrások által végzett munka eredményeként egy adott idő- és költségkereten belül sikeresen teljesüljenek a projekt céljai." (forrás: http://hu.wikipedia.org/wiki/Projektmenedzsment)
+
+	A projektmenedzsment eszközök fő célja tehát, hogy a fejlesztők a specifikáció által meghatározott feladatot adott idő - és költségkereten belül sikeresen tudják teljesíteni. Ennek érdekében számos hasznos funkcionalitást biztosítanak. Ilyen funkcionalitások például, különböző feladatkörök kiosztása, különböző feladatok kiosztása, egy adott folyamatra szánt idő meghatározása, a fejlesztő által eltöltött munkaidő egy adott rész megvalósításával. Mindezek mellett kommunikációs lehetőséget biztosít a fejlesztők között. Lehetőség ad feltölteni dokumentumokat, diagramokat, segédanyagokat a projekthez, ez által megkönnyítve a fejlesztők munkáját. 
+	
+	A RoboRun projekt fejlesztése során alkalmazott projektmenedzsment eszközként a Redmine\citep{redmine} webes menedzsment eszköz szolgált. A Redmine egy teljesen  nyílt forráskódú és platform független projektmenedzsment rendszer. Egyszerű és letisztult felülete révén könnyen kezelhető. Rengeteg funkcionalítást nyújt, mely nagy segítség lehet a különböző projektek fejlesztése során. A  Redmine által nyújtott néhány fontosabb funkcionalitás: naptár, e-mail értesítés, szerepkör szerinti hozzáférés, wiki és fórum, pluginok engedélyezés, adatbázisok támogatása, stb.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Build rendszer}
+
+A build rendszereket többnyire projektek menedzselésére és a build folyamat automatizálására alkalmazzák. 
+
+	A RoboRun projekt fejlesztése során alkalmazott build rendszer a Maven\cite{maven}, amelyet Jason van Zyl készített 2002-ben. A Maven egy nyílt forráskódú, platform független eszköz. Leggyakoribb felhasználása a Java nyelvben írt projektek esetében történik. A Maven konfigurációs modellje XML alapú, e mellett bevezetésre került a POM(Project Object Model). A POM az adott projekt szerkezeti vázának teljes leírását tartalmazza és a modulokat azonosítókkal látja el. Tehét a POM egy projekt leírását tartalmazza és a projekthez tartozó összes függőség listáját. Ezen függőségeket a Maven a saját központi tárolójából tölti le a projekt buildelése során. A POM esetén a lépéseket céloknak nevezik. A célok lehetnek előre definiáltak, mint például a forráskód csomagolása és fordítása vagy lehetnek a felhasználó által meghatározott célok.  Mindezt a pom.xml állomány által valósul meg, amely tartalmazza ezeket az információkat. 
+	
+	A RoboRun projekt esetén a Maven build eszköz legfontosabb szerepe a függőségek, célok és pluginok kielégítése a build folyamat során, hiszen a Maven saját függőség kezelő rendszerrel rendelkezik, amely  a build - elés során letölti a központi tárolóból az előre megadott függőségeket és elhelyezi a lokális tárolóban, ahonnan a jövőben használni fogja. E mellett a Maven lehetőséget nyújt a projekt moduljainak azonosítására a groupID, az artifactID és a verzió szám révén. A groupID logikai csoportokba szervezi a komponenseket, az artifactID minden komponenst egyedi azonosítóval lát el és a verzió az éppen aktuális verziószámot takarja a komponensek esetén.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\section{További felmerülő problémák megoldása}\label{sec:TovábbiProblemak}
+
+	A RoboRun projekt esetén szükséges a tesztek futtatása esetén az egyes hibaüzenetek megtekintésének lehetősége, melyet a naplózást biztosít. Naplózáshoz az SLF4J\footnote{\href {http://www.slf4j.org/}{http://www.slf4j.org/}} - LOG4J\footnote{\href {http://logging.apache.org/log4j/2.x/}{http://logging.apache.org/log4j/2.x/}} párosítás került használatra. Az SLF4J több naplózási keretrendszer fölött képez absztrakciós szintet, így több különböző naplózási implementációt vehetünk igényben általa. A LOG4J implementáció az Apache licenc áll. Az SLF4J naplózási keretrendszernek a legfőbb előnye, hogy a LOG4J bármikor könnyen lecserélhető, bármilyen más implementációra. 
+	A projekt esetén adatbázis menedzsment rendszerként a MySQL\footnote{\href {https://www.mysql.com/}{https://www.mysql.com/}} szolgált, amely többfelhasználós és többszálú SQL - alapú adatbázis-kezelő rendszer. 
+	Egy másik felmerülő probléma, az RMI(Remote Method Incovation)\footnote{\href {http://en.wikipedia.org/wiki/Java\_remote\_method\_invocation}{http://en.wikipedia.org/wiki/Java\_remote\_method\_invocation}} problémája. Az eredeti elképzelés szerint a kliens RMI - n keresztül csatlakozott volna a szerverhez, elkérve onnan a telepített szolgáltatások listáját. A listából kiválasztva a neki megfelelő szolgáltatásokat, indított volna teszteket. Tehát az alkalmazás \texttt{Experiment} része teljesen az OSGi konténeren kívül lett volna elérhető. Ennek megvalósítása nem lehetséges, a miatt, hogy az RMI kapcsolaton keresztül elküldött objektumok szerializálásra kerülnek. Az OSGi szolgáltatásokat pedig nem lehet szerializálni, tehát nem elérhetőek a konténeren kívül. Erről részletesebb leírás a \ref{ch:KOVETKEZTETESEK} fejezetben található.
+	
+	

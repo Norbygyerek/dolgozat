@@ -1,7 +1,6 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: minta_dolgozat.aux
 A level-1 auxiliary file: bevezeto.aux
 A level-1 auxiliary file: alapfogalmak.aux
-A level-1 auxiliary file: modszerek_es_eszkozok.aux
 A level-1 auxiliary file: felhasznalt_technologiak.aux
 A level-1 auxiliary file: osgi.aux
 A level-1 auxiliary file: rendszer_hasznalata.aux
@@ -10,12 +9,13 @@ The style file: abbrvnat_hu.bst
 Database file #1: hivatkozasok.bib
 Warning--to sort, need author or key in osgi
 Warning--to sort, need author or key in rlglue
+Warning--to sort, need author, editor, or key in reinfLearning
+Warning--to sort, need author, editor, or key in dynamicProg
 Warning--to sort, need author or key in glassfish
 Warning--to sort, need author or key in git
 Warning--to sort, need author or key in tortoisegit
 Warning--to sort, need author or key in redmine
 Warning--to sort, need author or key in maven
-Warning--to sort, need author or key in vaadin
 Warning--to sort, need author or key in szolg
 Warning--to sort, need author or key in apache
 Warning--to sort, need author or key in equinox
@@ -23,6 +23,7 @@ Warning--to sort, need author or key in batyu
 Warning--to sort, need author or key in eclipseplugin
 Warning--empty year in apache
 Warning--empty year in batyu
+Warning--empty author and editor in dynamicProg
 Warning--empty year in eclipseplugin
 Warning--empty year in equinox
 Warning--empty year in git
@@ -30,8 +31,8 @@ Warning--empty year in glassfish
 Warning--empty year in maven
 Warning--empty year in osgi
 Warning--empty year in redmine
+Warning--empty author and editor in reinfLearning
 Warning--empty year in rlglue
 Warning--empty year in szolg
 Warning--empty year in tortoisegit
-Warning--empty year in vaadin
-(There were 26 warnings)
+(There were 28 warnings)

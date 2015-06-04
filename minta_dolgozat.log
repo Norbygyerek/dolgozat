@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.25)  1 JUN 2015 18:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.25)  4 JUN 2015 17:19
 entering extended mode
 **minta_dolgozat.tex
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\minta_dolgozat.tex
@@ -1040,8 +1040,6 @@ File: lstlang3.sty 2014/09/06 1.5e listings language file
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\minta_dolgozat.aux
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\bevezeto.aux)
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\alapfogalmak.aux)
-(D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\modszerek_es_eszkozok.aux
-)
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\felhasznalt_technologiak.
 aux) (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\osgi.aux)
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\rendszer_hasznalata.aux)
@@ -1187,42 +1185,42 @@ l.117 \include{bevezeto}
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\bevezeto.tex
 1. fejezet
 
-Underfull \hbox (badness 10000) detected at line 11
+Underfull \hbox (badness 10000) detected at line 12
 \T1/ptm/m/n/8 1.
  []
 
 
-Overfull \hbox (11.35796pt too wide) in paragraph at lines 11--11
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 12--12
 [] 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 11
+Underfull \hbox (badness 10000) detected at line 12
 \T1/ptm/m/n/8 2.
  []
 
 
-Overfull \hbox (11.35796pt too wide) in paragraph at lines 11--11
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 12--12
 [] 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 11
+Underfull \hbox (badness 10000) detected at line 12
 \T1/ptm/m/n/8 3.
  []
 
 
-Overfull \hbox (11.35796pt too wide) in paragraph at lines 11--11
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 12--12
 [] 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 11
+Underfull \hbox (badness 10000) detected at line 12
 \T1/ptm/m/n/8 4.
  []
 
 
-Overfull \hbox (11.35796pt too wide) in paragraph at lines 11--11
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 12--12
 [] 
  []
 
@@ -1230,7 +1228,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.3}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.15 
+l.16 
       [3
 
 
@@ -1252,12 +1250,12 @@ Overfull \hbox (11.35796pt too wide) in paragraph at lines 12--12
  []
 
 
-Underfull \hbox (badness 10000) detected at line 14
+Underfull \hbox (badness 10000) detected at line 12
 \T1/ptm/m/n/8 2.
  []
 
 
-Overfull \hbox (11.35796pt too wide) in paragraph at lines 14--14
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 12--12
 [] 
  []
 
@@ -1271,79 +1269,147 @@ Overfull \hbox (11.35796pt too wide) in paragraph at lines 16--16
 [] 
  []
 
+
+Underfull \hbox (badness 10000) detected at line 18
+\T1/ptm/m/n/8 4.
+ []
+
+
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 18--18
+[] 
+ []
+
 [5
 
 
 
-] [6] [7]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--81
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 76--81
-
- []
-
-[8 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/glueConnection.
-png>] [9 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/osgiAlap.
-png>]) [10 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/alapUML
-.png>]
-(D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\modszerek_es_eszkozok.tex
-3. fejezet
-[11
-
-
-
-]) [12]
+] [6] [7] [8 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/glueC
+onnection.png>] [9 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images
+/alapKomponens.png>]) [10 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben
+/images/alapUML.png>]
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\felhasznalt_technologiak.
 tex
-4. fejezet
+3. fejezet
 
-Underfull \hbox (badness 10000) detected at line 14
+Underfull \hbox (badness 10000) detected at line 12
 \T1/ptm/m/n/8 1.
  []
 
 
-Overfull \hbox (11.35796pt too wide) in paragraph at lines 14--14
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 12--12
 [] 
  []
 
 
-Underfull \hbox (badness 10000) detected at line 14
+Underfull \hbox (badness 10000) detected at line 12
 \T1/ptm/m/n/8 2.
  []
 
 
-Overfull \hbox (11.35796pt too wide) in paragraph at lines 14--14
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 12--12
 [] 
  []
 
-[13
+
+Underfull \hbox (badness 10000) detected at line 12
+\T1/ptm/m/n/8 3.
+ []
+
+
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 12--12
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 12
+\T1/ptm/m/n/8 4.
+ []
+
+
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 12--12
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+\T1/ptm/m/n/8 5.
+ []
+
+
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 20--20
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 20
+\T1/ptm/m/n/8 6.
+ []
+
+
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 20--20
+[] 
+ []
+
+[11
 
 
 
-] [14 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/vaadinArchit
-ecture.png>] [15 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/v
-aadinComponents.png>]) [16]
-(D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\osgi.tex
-5. fejezet
+]
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[12] [13 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/vaadinArc
+hitecture.png>] [14 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/image
+s/vaadinComponents.png>] [15]
+Underfull \hbox (badness 10000) detected at line 93
+\T1/ptm/m/n/8 7.
+ []
+
+
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 93--93
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 93
+\T1/ptm/m/n/8 8.
+ []
+
+
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 93--93
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) detected at line 94
+\T1/ptm/m/n/8 9.
+ []
+
+
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 94--94
+[] 
+ []
+
+
+Overfull \hbox (0.89204pt too wide) detected at line 95
+\T1/ptm/m/n/8 10.
+ []
+
+
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 95--95
+[] 
+ []
+
+) [16] (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\osgi.tex
+4. fejezet
 [17
 
 
 
-] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
-File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
-)
-(D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/MANIFEST.MF
-LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
-(Font)              Font shape `T1/pcr/b/n' tried instead on input line 1.
-)
-("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
+] ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2014/09/06 1.5e listings language file
 )
 ("C:\Program Files\MiKTeX 2.9\tex\latex\listings\lstmisc.sty"
@@ -1352,33 +1418,56 @@ File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-(D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/Activator.java
+(D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/MANIFEST.MF
+LaTeX Font Info:    Font shape `T1/pcr/bx/n' in size <8> not available
+(Font)              Font shape `T1/pcr/b/n' tried instead on input line 1.
+)
 [18 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/osgiArchitectu
-re.png>])
-Underfull \hbox (badness 10000) in paragraph at lines 49--80
+re.png>] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+)
+(D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/Activator.java)
 
- []
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[19 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/batyuEleres.jp
-g>] [20 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/batyuLifeC
+[19] [20 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/batyuEler
+es.jpg> <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/batyuLifeC
 ycle.jpg>] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/ActivatorServic
 e.java)
-Underfull \hbox (badness 6173) in paragraph at lines 89--92
-\T1/pcr/m/n/10.95 context) \T1/ptm/m/n/10.95 me-tÛ-du-sok-kal. A \T1/pcr/m/n/10
-.95 BundleContext\T1/ptm/m/n/10.95 - ·l-tal ˙j szol-g·l-ta-t·-so-kat le-het re-
-giszt-r·l-ni
+Underfull \hbox (badness 4805) in paragraph at lines 107--109
+[]\T1/ptm/m/n/10.95 A [][]4.3[][] kÛd-rÈsz-let ese-tÈn az \T1/pcr/m/n/10.95 Act
+ivator \T1/ptm/m/n/10.95 osz-t·ly imp-le-men-t·l-ja a \T1/pcr/m/n/10.95 BundleA
+ctivator
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 89--92
-\T1/ptm/m/n/10.95 Ès le-kÈr-dez-ni. A \T1/pcr/m/n/10.95 context.registerService
-(Example.class.getName(), new
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
+\T1/ptm/m/n/10.95 in-ter-fÈszt, mely kÈt me-tÛ-dus-sal ren-del-ke-zik, a \T1/pc
+r/m/n/10.95 start(BundleContext
  []
 
-("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
+\T1/pcr/m/n/10.95 context) \T1/ptm/m/n/10.95 Ès a \T1/pcr/m/n/10.95 stop(Bundle
+Context context) \T1/ptm/m/n/10.95 me-tÛ-du-sok-kal. A
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
+\T1/pcr/m/n/10.95 BundleContext\T1/ptm/m/n/10.95 - ·l-tal ˙j szol-g·l-ta-t·-so-
+kat le-het re-giszt-r·l-ni Ès le-kÈr-dez-ni. A
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--109
+\T1/pcr/m/n/10.95 context.registerService(Example.class.getName(), new ExampleI
+mpl(),
+ []
+
+[21] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/ActivatorServic
@@ -1386,11 +1475,16 @@ eDictionary.java) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/GetService.java
-) [21] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+)
+Underfull \hbox (badness 10000) in paragraph at lines 121--125
+
+ []
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/ServiceFactory.
-java) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+java [22]) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/RegisterService
@@ -1404,8 +1498,8 @@ File: lstmisc.sty 2014/09/06 1.5e (Carsten Heinz)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
-(D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/packaging.xml
-[22]) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+(D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/packaging.xml)
+[23] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/randomAgentDepe
@@ -1413,38 +1507,34 @@ ndecy.xml) ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/agentPom.xml)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-Underfull \hbox (badness 7151) in paragraph at lines 139--140
+Underfull \hbox (badness 7151) in paragraph at lines 163--164
 []\T1/ptm/m/n/10.95 A Ro-bo-Run pro-jekt ese-tÈ-ben nÈgy alap kom-po-nens-rÆl b
 e-szÈl-he-t¸nk. Ezen kom-po-nen-
  []
 
 
-Underfull \hbox (badness 3088) in paragraph at lines 139--140
+Underfull \hbox (badness 3088) in paragraph at lines 163--164
 \T1/ptm/m/n/10.95 sek az \T1/pcr/m/n/10.95 Agent\T1/ptm/m/n/10.95 (‹gynˆk), az 
 \T1/pcr/m/n/10.95 Environment\T1/ptm/m/n/10.95 (Kˆrnyezet), az \T1/pcr/m/n/10.9
 5 Experiment\T1/ptm/m/n/10.95 (KÌsÈrlet), il-let-ve a
  []
 
-[23] [24 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/osgiAlapk
-omponensek.png>]
-Underfull \hbox (badness 2181) in paragraph at lines 147--149
+[24] [25 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/osgiKompo
+nensAlap.png>]
+Underfull \hbox (badness 2181) in paragraph at lines 180--181
 []\T1/ptm/m/n/10.95 A szol-g·l-ta-t·-sok le-kÈ-rÈ-se a szol-g·l-ta-t·s t·-ro-lÛ
 -bÛl a \T1/pcr/m/n/10.95 BundleContext \T1/ptm/m/n/10.95 re-fe-ren-ci-·n ke-res
 z-
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 147--149
+Underfull \hbox (badness 2261) in paragraph at lines 180--181
 \T1/ptm/m/n/10.95 t¸l ke-r¸l meg-va-lÛ-sÌ-t·s-ra. A ba-tyuk imp-le-men-t·l-j·k 
 a \T1/pcr/m/n/10.95 BundleActivator \T1/ptm/m/n/10.95 in-ter-fÈszt, mely a
  []
 
 
-Underfull \hbox (badness 2913) in paragraph at lines 147--149
+Underfull \hbox (badness 2913) in paragraph at lines 180--181
 \T1/pcr/m/n/10.95 start(BundleContext context) \T1/ptm/m/n/10.95 Ès \T1/pcr/m/n
 /10.95 stop(BundleContext context) \T1/ptm/m/n/10.95 me-tÛ-du-sok-kal
  []
@@ -1453,14 +1543,20 @@ Underfull \hbox (badness 2913) in paragraph at lines 147--149
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/ServiceReferenc
-e.java) [25] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
+e.java) [26] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\progfiles/RandomAgentServ
-iceFactory.java)) [26]
+iceFactory.java)
+Underfull \hbox (badness 1028) in paragraph at lines 196--197
+[]\T1/ptm/m/n/10.95 A 13-adik sor-ban l·t-ha-tÛ a \T1/pcr/m/n/10.95 RandomAgent
+ \T1/ptm/m/n/10.95 osz-t·ly pÈl-d·-nyo-sÌ-t·s-ra, me-lyet a 15 -sorban a
+ []
+
+) [27]
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\rendszer_hasznalata.tex
-6. fejezet
-[27
+5. fejezet
+[28
 
 
 
@@ -1471,53 +1567,75 @@ ez tar-to-zÛ tÌ-pu-so-kat, pÈl-d·-ul az \T1/pcr/m/n/10.95 Action \T1/ptm/m/n/10
 .95 vagy az
  []
 
-[28 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/alapKomponens.
-png> <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/komponensInte
-rfeszekkel.png>]
+[29 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/komponensInter
+feszekkel.png> <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/pac
+kagesKomponens.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 69--71
 \T1/ptm/m/n/10.95 kom-po-nens van ki-je-lˆl-ve. E ba-tyu fo-lya-ma-to-san Èr-te
 -s¸l ar-rÛl, hogy-ha ˙j \T1/pcr/m/n/10.95 Agent \T1/ptm/m/n/10.95 vagy
  []
 
-[29 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/packagesKompon
-ens.png> <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/dataModel
-Robo.png>] [30 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/age
-ntEnvironmentListKomponens.png>]
+[30 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/dataModelRobo.
+png>]
+Underfull \hbox (badness 10000) detected at line 83
+\T1/ptm/m/n/8 1.
+ []
+
+
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 83--83
+[] 
+ []
+
+[31 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/agentEnvironme
+ntListKomponens.png>]
+Underfull \hbox (badness 6961) in paragraph at lines 98--99
+[]\T1/ptm/m/n/10.95 Az "Dep-loyed Bund-les" me-n¸-pont alatt ta-l·l-ha-tÛ-ak a 
+rend-szer-be te-le-pÌ-tett \T1/pcr/m/n/10.95 Agent \T1/ptm/m/n/10.95 Ès
+ []
+
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[31 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/webAktivTeszte
-k.jpg>]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \hbox (badness 10000) in paragraph at lines 113--137
 
-[32 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/webAktivBatyuk
-.jpg>]) [33 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/webRes
-ults.jpg>]
+ []
+
+[32 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/webAktivTeszte
+k.jpg>] [33 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/webAkt
+ivBatyuk.jpg>]
+Underfull \hbox (badness 3407) in paragraph at lines 151--152
+\T1/ptm/m/n/10.95 Minden teszt fut-ta-t·-sa az \T1/pcr/m/n/10.95 Experiment \T1
+/ptm/m/n/10.95 kom-po-nens-tÆl in-dul. Az \T1/pcr/m/n/10.95 Experiment \T1/ptm/
+m/n/10.95 kom-po-nens
+ []
+
+[34 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/webResults.jpg
+>]) [35 <D:/Let√∂lt√©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/szekvencia
+.png>]
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\kovetkeztetesek.tex
-7. fejezet
-) [34
+6. fejezet
+[36
 
 
 
-] (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\minta_dolgozat.bbl
-Underfull \hbox (badness 6944) in paragraph at lines 59--63
+]) [37]
+(D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\minta_dolgozat.bbl
+[38
+
+
+]
+Underfull \hbox (badness 6944) in paragraph at lines 67--71
 []\T1/ptm/m/n/10.95 Szolg·ltat·s ori-en-t·lt ar-chi-tek-t˙-ta wi-ki-pe-dia.  []
 []$\T1/pcr/m/n/10.95 http : / / hu . wikipedia . org / wiki /$
  []
 
-[35
-
-
-]) [36]
+) [39]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 135.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 135.
-
-(D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\minta_dolgozat.aux
-(D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\bevezeto.aux)
+ (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\minta_dolgozat.aux (D:\L
+et√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\bevezeto.aux)
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\alapfogalmak.aux)
-(D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\modszerek_es_eszkozok.aux
-)
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\felhasznalt_technologiak.
 aux) (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\osgi.aux)
 (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\rendszer_hasznalata.aux)
@@ -1525,60 +1643,29 @@ aux) (D:\Let√∂lt√©sek\Dropbox\Allamvizsga\DolgozatLatexben\osgi.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
 Package rerunfilecheck Info: File `minta_dolgozat.out' has not changed.
-(rerunfilecheck)             Checksum: A1340250EB73D4689E471D2915FE47C3;5252.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: FFBA1BE5A0EAFBE2C57C81EEC01CBBC6;5308.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
  ) 
 Here is how much of TeX's memory you used:
- 26861 strings out of 493921
- 486338 string characters out of 3147282
- 680288 words of memory out of 3000000
- 29247 multiletter control sequences out of 15000+200000
- 68980 words of font info for 84 fonts, out of 3000000 for 9000
+ 26323 strings out of 493921
+ 480005 string characters out of 3147282
+ 668105 words of memory out of 3000000
+ 28710 multiletter control sequences out of 15000+200000
+ 71828 words of font info for 86 fonts, out of 3000000 for 9000
  899 hyphenation exceptions out of 8191
- 55i,9n,69p,1979b,2270s stack positions out of 5000i,500n,10000p,200000b,50000s
-pdfTeX warning (dest): name{figure.caption.18} has been referenced but does n
-ot exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.17} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.16} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.15} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.14} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.12} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.11} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.10} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{figure.caption.4} has been referenced but does not 
-exist, replaced by a fixed one
-
-{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program Files/
-MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Program Files/MiKTeX 2.9/font
-s/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/cou
-rier/ucrro8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.p
-fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Progra
-m Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.
-9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw
-/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb
->
-Output written on minta_dolgozat.pdf (39 pages, 1015282 bytes).
+ 55i,9n,69p,2541b,2295s stack positions out of 5000i,500n,10000p,200000b,50000s
+{C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/fontname/8r.enc}<C:/Program File
+s/MiKTeX 2.9/fonts/type1/urw/courier/ucrb8a.pfb><C:/Program Files/MiKTeX 2.9/fo
+nts/type1/urw/courier/ucrr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/c
+ourier/ucrro8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a
+.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8ac.pfb><C:/Prog
+ram Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 
+2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
+rw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
+fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on minta_dolgozat.pdf (42 pages, 1019267 bytes).
 PDF statistics:
- 733 PDF objects out of 1000 (max. 8388607)
- 266 named destinations out of 1000 (max. 500000)
- 345 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 790 PDF objects out of 1000 (max. 8388607)
+ 270 named destinations out of 1000 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 
