@@ -23,11 +23,15 @@ Warning--to sort, need author or key in apache
 Warning--to sort, need author or key in equinox
 Warning--to sort, need author or key in batyu
 Warning--to sort, need author or key in eclipseplugin
+Warning--to sort, need author or key in dolgozat
+Warning--to sort, need author or key in forras
 Warning--empty year in apache
 Warning--empty year in batyu
+Warning--empty year in dolgozat
 Warning--empty author and editor in dynamicProg
 Warning--empty year in eclipseplugin
 Warning--empty year in equinox
+Warning--empty year in forras
 Warning--empty year in git
 Warning--empty year in glassfish
 Warning--empty year in maven
@@ -39,4 +43,4 @@ Warning--empty year in rlglue
 Warning--empty year in szolg
 Warning--empty year in tortoisegit
 Warning--empty year in vaadin
-(There were 32 warnings)
+(There were 36 warnings)

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.25)  11 JUN 2015 15:20
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.25)  11 JUN 2015 15:37
 entering extended mode
 **minta_dolgozat.tex
 (D:\LetÃ¶ltÃ©sek\Dropbox\Allamvizsga\DolgozatLatexben\minta_dolgozat.tex
@@ -1656,16 +1656,22 @@ m/n/10.95 kom-po-nens
 
 ]) [37]
 (D:\LetÃ¶ltÃ©sek\Dropbox\Allamvizsga\DolgozatLatexben\minta_dolgozat.bbl
-Underfull \hbox (badness 6859) in paragraph at lines 53--56
-[]\T1/ptm/m/n/10.95 Projektmenedzsment.  [][]$\T1/pcr/m/n/10.95 http : / / hu .
- wikipedia . org / wiki / Projektmenedzsment$[][]\T1/ptm/m/n/10.95 .
+Underfull \hbox (badness 10000) in paragraph at lines 19--23
+[]\T1/ptm/m/n/10.95 A dol-go-zat.  [][]$\T1/pcr/m/n/10.95 https : / / github . 
+com / Norbygyerek / dolgozat / blob / master /$
  []
 
 [38
 
 
 ]
-Underfull \hbox (badness 6944) in paragraph at lines 72--76
+Underfull \hbox (badness 6859) in paragraph at lines 64--67
+[]\T1/ptm/m/n/10.95 Projektmenedzsment.  [][]$\T1/pcr/m/n/10.95 http : / / hu .
+ wikipedia . org / wiki / Projektmenedzsment$[][]\T1/ptm/m/n/10.95 .
+ []
+
+
+Underfull \hbox (badness 6944) in paragraph at lines 83--87
 []\T1/ptm/m/n/10.95 Szolgáltatás ori-en-tált ar-chi-tek-tú-ta wi-ki-pe-dia.  []
 []$\T1/pcr/m/n/10.95 http : / / hu . wikipedia . org / wiki /$
  []
@@ -1687,10 +1693,10 @@ Package rerunfilecheck Info: File `minta_dolgozat.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
  ) 
 Here is how much of TeX's memory you used:
- 26347 strings out of 493921
- 480318 string characters out of 3147282
- 668225 words of memory out of 3000000
- 28731 multiletter control sequences out of 15000+200000
+ 26355 strings out of 493921
+ 480432 string characters out of 3147282
+ 668263 words of memory out of 3000000
+ 28737 multiletter control sequences out of 15000+200000
  71828 words of font info for 86 fonts, out of 3000000 for 9000
  899 hyphenation exceptions out of 8191
  55i,9n,69p,2541b,2295s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1703,9 +1709,9 @@ ram Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX
 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on minta_dolgozat.pdf (42 pages, 926608 bytes).
+Output written on minta_dolgozat.pdf (42 pages, 928068 bytes).
 PDF statistics:
- 802 PDF objects out of 1000 (max. 8388607)
- 273 named destinations out of 1000 (max. 500000)
+ 809 PDF objects out of 1000 (max. 8388607)
+ 275 named destinations out of 1000 (max. 500000)
  337 words of extra memory for PDF output out of 10000 (max. 10000000)
 

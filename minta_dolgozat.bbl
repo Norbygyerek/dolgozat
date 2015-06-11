@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{18}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -15,6 +15,12 @@ Paller gábor - osgi és batyuk.
 \newblock \url{http://pallergabor.uw.hu/hu/java-app/OSGi.html}.
 \newblock Utolsó megtekintés dátuma: 2015-05-15.
 
+\bibitem[dol()]{dolgozat}
+A dolgozat.
+\newblock
+  \url{https://github.com/Norbygyerek/dolgozat/blob/master/minta_dolgozat.pdf}.
+\newblock Utolsó megtekintés dátuma: 2015-06-12.
+
 \bibitem[dyn(2005)]{dynamicProg}
 \emph{Dynamic Programming and Optimal Control}.
 \newblock Athena Scientific, 2005.
@@ -28,6 +34,11 @@ Eclipe plugin hivatalos weboldal.
 Eclipe equinox hivatalos weboldal.
 \newblock \url{http://eclipse.org/equinox/}.
 \newblock Utolsó megtekintés dátuma: 2015-05-28.
+
+\bibitem[for()]{forras}
+A teljes forráskód.
+\newblock \url{https://github.com/Norbygyerek/forras/}.
+\newblock Utolsó megtekintés dátuma: 2015-06-12.
 
 \bibitem[git()]{git}
 Git hivatalos weboldal.
