@@ -1,8 +1,9 @@
-Bundle-Name: rmiExperiment
-Bundle-SymbolicName: edu.bbte.rmiExperiment
-Bundle-Version: 1.0.0
-Bundle-Vendor: GALLNORBERT
-Bundle-Activator: edu.bbte.rmiExperiment.Activator
-Export-Package: edu.bbte.rmiExperiment
-Import-Package: edu.bbte.packages,
- org.osgi.framework;version="1.3.0"
+Bundle-Name: environment
+Bundle-SymbolicName: environment
+Bundle-Version: 1.0.0-RELEASE
+Built-By: Gáll
+Bundle-Activator: edu.bbte.environment.EnvironmentActivator
+Created-By: Apache Maven Bundle Plugin
+Export-Package: edu.bbte.environment
+Import-Package: edu.bbte.packages.types;version="[0.0,1)",javax.xml.pars
+ ers,org.osgi.framework;version="[1.6,2)",org.w3c.dom

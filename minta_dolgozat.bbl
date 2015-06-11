@@ -1,4 +1,4 @@
-\begin{thebibliography}{14}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -8,7 +8,7 @@
 \bibitem[apa()]{apache}
 Apache felix hivatalos weboldal.
 \newblock \url{http://felix.apache.org/}.
-\newblock Utolsó megtekintés dátuma: 2015-05-15.
+\newblock Utolsó megtekintés dátuma: 2015-06-02.
 
 \bibitem[bat()]{batyu}
 Paller gábor - osgi és batyuk.
@@ -22,17 +22,17 @@ Paller gábor - osgi és batyuk.
 \bibitem[ecl()]{eclipseplugin}
 Eclipe plugin hivatalos weboldal.
 \newblock \url{http://marketplace.eclipse.org/}.
-\newblock Utolsó megtekintés dátuma: 2015-05-15.
+\newblock Utolsó megtekintés dátuma: 2015-05-29.
 
 \bibitem[equ()]{equinox}
 Eclipe equinox hivatalos weboldal.
 \newblock \url{http://eclipse.org/equinox/}.
-\newblock Utolsó megtekintés dátuma: 2015-05-15.
+\newblock Utolsó megtekintés dátuma: 2015-05-28.
 
 \bibitem[git()]{git}
 Git hivatalos weboldal.
 \newblock \url{https://github.com/}.
-\newblock Utolsó megtekintés dátuma: 2015-05-15.
+\newblock Utolsó megtekintés dátuma: 2015-06-08.
 
 \bibitem[gla()]{glassfish}
 Glassfish hivatalos weboldal.
@@ -42,17 +42,22 @@ Glassfish hivatalos weboldal.
 \bibitem[mav()]{maven}
 Maven hivatalos weboldal.
 \newblock \url{https://maven.apache.org/}.
-\newblock Utolsó megtekintés dátuma: 2015-05-15.
+\newblock Utolsó megtekintés dátuma: 2015-06-06.
 
 \bibitem[osg()]{osgi}
 Osgi hivatalos weboldal.
 \newblock \url{https://osgi.org/download/r6/osgi.core-6.0.0.pdf}.
 \newblock Utolsó megtekintés dátuma: 2015-05-15.
 
+\bibitem[pro()]{projektmenedzsment}
+Projektmenedzsment.
+\newblock \url{http://hu.wikipedia.org/wiki/Projektmenedzsment}.
+\newblock Utolsó megtekintés dátuma: 2015-06-04.
+
 \bibitem[red()]{redmine}
 Redmine hivatalos weboldal.
 \newblock \url{http://www.redmine.org/}.
-\newblock Utolsó megtekintés dátuma: 2015-05-15.
+\newblock Utolsó megtekintés dátuma: 2015-06-07.
 
 \bibitem[rei(2005)]{reinfLearning}
 \emph{Reinforcement Learning: An Introduction}.
@@ -61,17 +66,22 @@ Redmine hivatalos weboldal.
 \bibitem[rlg()]{rlglue}
 Rl- glue hivatalos weboldal.
 \newblock \url{http://glue.rl-community.org/wiki/Main\_Page}.
-\newblock Utolsó megtekintés dátuma: 2015-05-15.
+\newblock Utolsó megtekintés dátuma: 2015-06-05.
 
 \bibitem[szo()]{szolg}
 Szolgáltatás orientált architektúta wikipedia.
 \newblock
   \url{http://hu.wikipedia.org/wiki/Szolgáltatásorientált\_architektúra}.
-\newblock Utolsó megtekintés dátuma: 2015-05-15.
+\newblock Utolsó megtekintés dátuma: 2015-05-10.
 
 \bibitem[tor()]{tortoisegit}
 Tortoise git.
 \newblock \url{https://code.google.com/p/tortoisegit/}.
-\newblock Utolsó megtekintés dátuma: 2015-05-15.
+\newblock Utolsó megtekintés dátuma: 2015-05-18.
+
+\bibitem[vaa()]{vaadin}
+Vaadin hivatalos weboldal.
+\newblock \url{https://vaadin.com/home}.
+\newblock Utolsó megtekintés dátuma: 2015-06-06.
 
 \end{thebibliography}

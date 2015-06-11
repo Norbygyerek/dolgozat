@@ -12,8 +12,10 @@ Warning--to sort, need author or key in rlglue
 Warning--to sort, need author, editor, or key in reinfLearning
 Warning--to sort, need author, editor, or key in dynamicProg
 Warning--to sort, need author or key in glassfish
+Warning--to sort, need author or key in vaadin
 Warning--to sort, need author or key in git
 Warning--to sort, need author or key in tortoisegit
+Warning--to sort, need author or key in projektmenedzsment
 Warning--to sort, need author or key in redmine
 Warning--to sort, need author or key in maven
 Warning--to sort, need author or key in szolg
@@ -30,9 +32,11 @@ Warning--empty year in git
 Warning--empty year in glassfish
 Warning--empty year in maven
 Warning--empty year in osgi
+Warning--empty year in projektmenedzsment
 Warning--empty year in redmine
 Warning--empty author and editor in reinfLearning
 Warning--empty year in rlglue
 Warning--empty year in szolg
 Warning--empty year in tortoisegit
-(There were 28 warnings)
+Warning--empty year in vaadin
+(There were 32 warnings)

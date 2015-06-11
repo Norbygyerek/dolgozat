@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.25)  4 JUN 2015 17:19
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.3.25)  11 JUN 2015 15:20
 entering extended mode
 **minta_dolgozat.tex
 (D:\LetÃ¶ltÃ©sek\Dropbox\Allamvizsga\DolgozatLatexben\minta_dolgozat.tex
@@ -1122,11 +1122,6 @@ LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <14.4> not available
 LaTeX Font Info:    Font shape `OT1/phv/bx/n' in size <20.74> not available
 (Font)              Font shape `OT1/phv/b/n' tried instead on input line 101.
 
-Underfull \hbox (badness 10000) in paragraph at lines 101--101
-[]\T1/ptm/m/sc/14.4 JAKAB HU-NOR, PH.D, AS-SIS-TANT
- []
-
-
 Overfull \hbox (2.73601pt too wide) in paragraph at lines 101--101
 []  []
  []
@@ -1361,6 +1356,46 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
+
+Underfull \hbox (badness 2005) in paragraph at lines 53--54
+\T1/ptm/m/n/10.95 tály imp-le-men-tál. Az \T1/pcr/m/n/10.95 AbstractComponent \
+T1/ptm/m/n/10.95 kö-zös tu-laj-don-sá-gok-kal lát-ja el az ®t szár-maz-
+ []
+
+
+Underfull \hbox (badness 1668) in paragraph at lines 53--54
+\T1/ptm/m/n/10.95 ta-tó kom-po-nen-se-ket. Az \T1/pcr/m/n/10.95 AbstractCompone
+nt \T1/ptm/m/n/10.95 osz-tály-ból szár-maz-tat-va van né-hány egy-sze-r¶
+ []
+
+
+Underfull \hbox (badness 1117) in paragraph at lines 53--54
+\T1/ptm/m/n/10.95 kom-po-nens, pél-dá-ul a \T1/pcr/m/n/10.95 Label\T1/ptm/m/n/1
+0.95 (Címke). A \T1/pcr/m/n/10.95 Component \T1/ptm/m/n/10.95 in-ter-fész mel-l
+et, meg-ta-lál-ha-tó a \T1/pcr/m/n/10.95 Field
+ []
+
+
+Underfull \hbox (badness 2990) in paragraph at lines 53--54
+\T1/ptm/m/n/10.95 in-ter-fész is, amely örök-li a \T1/pcr/m/n/10.95 Component \
+T1/ptm/m/n/10.95 in-ter-fészt. Az \T1/pcr/m/n/10.95 AbstractField \T1/ptm/m/n/1
+0.95 abszt-rakt osz-tály
+ []
+
+
+Underfull \hbox (badness 2990) in paragraph at lines 53--54
+\T1/ptm/m/n/10.95 imp-le-men-tál-ja a \T1/pcr/m/n/10.95 Field \T1/ptm/m/n/10.95
+ in-ter-fész és örök-li az \T1/pcr/m/n/10.95 AbstractComponent \T1/ptm/m/n/10.9
+5 osz-tály tu-laj-don-sá-ga-
+ []
+
+
+Underfull \hbox (badness 2103) in paragraph at lines 53--54
+\T1/ptm/m/n/10.95 it. Az \T1/pcr/m/n/10.95 AbstractField \T1/ptm/m/n/10.95 osz-
+tály a ki-je-lö-lés-sel, na-vi-gá-lás-sal kap-cso-la-tos kom-po-nen-sek alap-ja
+-
+ []
+
 [12] [13 <D:/LetÃ¶ltÃ©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/vaadinArc
 hitecture.png>] [14 <D:/LetÃ¶ltÃ©sek/Dropbox/Allamvizsga/DolgozatLatexben/image
 s/vaadinComponents.png>] [15]
@@ -1431,7 +1466,7 @@ File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [19] [20 <D:/LetÃ¶ltÃ©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/batyuEler
-es.jpg> <D:/LetÃ¶ltÃ©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/batyuLifeC
+es.png> <D:/LetÃ¶ltÃ©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/batyuLifeC
 ycle.jpg>] ("C:\Program Files\MiKTeX 2.9\tex\latex\base\utf8.def"
 File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
 )
@@ -1561,7 +1596,7 @@ Underfull \hbox (badness 1028) in paragraph at lines 196--197
 
 
 ]
-Underfull \hbox (badness 3209) in paragraph at lines 42--47
+Underfull \hbox (badness 3209) in paragraph at lines 44--49
 \T1/pcr/m/n/10.95 types \T1/ptm/m/n/10.95 - amely meg-ha-tá-roz-za a tesz-tek-h
 ez tar-to-zó tí-pu-so-kat, pél-dá-ul az \T1/pcr/m/n/10.95 Action \T1/ptm/m/n/10
 .95 vagy az
@@ -1570,25 +1605,25 @@ ez tar-to-zó tí-pu-so-kat, pél-dá-ul az \T1/pcr/m/n/10.95 Action \T1/ptm/m/n/10
 [29 <D:/LetÃ¶ltÃ©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/komponensInter
 feszekkel.png> <D:/LetÃ¶ltÃ©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/pac
 kagesKomponens.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 69--71
+Underfull \hbox (badness 10000) in paragraph at lines 71--73
 \T1/ptm/m/n/10.95 kom-po-nens van ki-je-löl-ve. E ba-tyu fo-lya-ma-to-san ér-te
 -sül ar-ról, hogy-ha új \T1/pcr/m/n/10.95 Agent \T1/ptm/m/n/10.95 vagy
  []
 
 [30 <D:/LetÃ¶ltÃ©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/dataModelRobo.
 png>]
-Underfull \hbox (badness 10000) detected at line 83
+Underfull \hbox (badness 10000) detected at line 85
 \T1/ptm/m/n/8 1.
  []
 
 
-Overfull \hbox (11.35796pt too wide) in paragraph at lines 83--83
+Overfull \hbox (11.35796pt too wide) in paragraph at lines 85--85
 [] 
  []
 
 [31 <D:/LetÃ¶ltÃ©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/agentEnvironme
 ntListKomponens.png>]
-Underfull \hbox (badness 6961) in paragraph at lines 98--99
+Underfull \hbox (badness 6961) in paragraph at lines 100--101
 []\T1/ptm/m/n/10.95 Az "Dep-loyed Bund-les" me-nü-pont alatt ta-lál-ha-tó-ak a 
 rend-szer-be te-le-pí-tett \T1/pcr/m/n/10.95 Agent \T1/ptm/m/n/10.95 és
  []
@@ -1597,14 +1632,14 @@ rend-szer-be te-le-pí-tett \T1/pcr/m/n/10.95 Agent \T1/ptm/m/n/10.95 és
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 113--137
+Underfull \hbox (badness 10000) in paragraph at lines 115--139
 
  []
 
 [32 <D:/LetÃ¶ltÃ©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/webAktivTeszte
 k.jpg>] [33 <D:/LetÃ¶ltÃ©sek/Dropbox/Allamvizsga/DolgozatLatexben/images/webAkt
 ivBatyuk.jpg>]
-Underfull \hbox (badness 3407) in paragraph at lines 151--152
+Underfull \hbox (badness 3407) in paragraph at lines 153--154
 \T1/ptm/m/n/10.95 Minden teszt fut-ta-tá-sa az \T1/pcr/m/n/10.95 Experiment \T1
 /ptm/m/n/10.95 kom-po-nens-t®l in-dul. Az \T1/pcr/m/n/10.95 Experiment \T1/ptm/
 m/n/10.95 kom-po-nens
@@ -1621,11 +1656,16 @@ m/n/10.95 kom-po-nens
 
 ]) [37]
 (D:\LetÃ¶ltÃ©sek\Dropbox\Allamvizsga\DolgozatLatexben\minta_dolgozat.bbl
+Underfull \hbox (badness 6859) in paragraph at lines 53--56
+[]\T1/ptm/m/n/10.95 Projektmenedzsment.  [][]$\T1/pcr/m/n/10.95 http : / / hu .
+ wikipedia . org / wiki / Projektmenedzsment$[][]\T1/ptm/m/n/10.95 .
+ []
+
 [38
 
 
 ]
-Underfull \hbox (badness 6944) in paragraph at lines 67--71
+Underfull \hbox (badness 6944) in paragraph at lines 72--76
 []\T1/ptm/m/n/10.95 Szolgáltatás ori-en-tált ar-chi-tek-tú-ta wi-ki-pe-dia.  []
 []$\T1/pcr/m/n/10.95 http : / / hu . wikipedia . org / wiki /$
  []
@@ -1643,14 +1683,14 @@ aux) (D:\LetÃ¶ltÃ©sek\Dropbox\Allamvizsga\DolgozatLatexben\osgi.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 135.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 135.
 Package rerunfilecheck Info: File `minta_dolgozat.out' has not changed.
-(rerunfilecheck)             Checksum: FFBA1BE5A0EAFBE2C57C81EEC01CBBC6;5308.
+(rerunfilecheck)             Checksum: CFEB6688CCFEB54D7188C91F0920AC7F;5302.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 135.
  ) 
 Here is how much of TeX's memory you used:
- 26323 strings out of 493921
- 480005 string characters out of 3147282
- 668105 words of memory out of 3000000
- 28710 multiletter control sequences out of 15000+200000
+ 26347 strings out of 493921
+ 480318 string characters out of 3147282
+ 668225 words of memory out of 3000000
+ 28731 multiletter control sequences out of 15000+200000
  71828 words of font info for 86 fonts, out of 3000000 for 9000
  899 hyphenation exceptions out of 8191
  55i,9n,69p,2541b,2295s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1663,9 +1703,9 @@ ram Files/MiKTeX 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX
 2.9/fonts/type1/urw/times/utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/u
 rw/times/utmr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
 fb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on minta_dolgozat.pdf (42 pages, 1019267 bytes).
+Output written on minta_dolgozat.pdf (42 pages, 926608 bytes).
 PDF statistics:
- 790 PDF objects out of 1000 (max. 8388607)
- 270 named destinations out of 1000 (max. 500000)
+ 802 PDF objects out of 1000 (max. 8388607)
+ 273 named destinations out of 1000 (max. 500000)
  337 words of extra memory for PDF output out of 10000 (max. 10000000)
 
